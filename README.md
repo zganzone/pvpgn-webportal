@@ -19,3 +19,31 @@ This repo contains scripts and static web pages for PvPGN server statistics:
 - Make feature branches: `git checkout -b feature/parse-items`
 - Open PR to `main` when ready.
 
+-----------
+
+
+Direcotry tree 
+##
+#system structure
+
+
+/usr/local/pvpgn/tools/finalstat
+/var/www/html/
+
+
+##
+#webstat dir and files that are used
+
+/usr/local/pvpgn/tools/finalstat/logs/bnchat_raw.txt
+/usr/local/pvpgn/tools/finalstat/logs/gameinfo_clean.txt
+/usr/local/pvpgn/tools/finalstat/logs/gameinfo.json
+/usr/local/pvpgn/tools/finalstat/logs/gameinfo_raw.txt
+/usr/local/pvpgn/tools/finalstat/logs/games_list.txt
+
+##
+#pvpgn dir and files that are used
+
+/usr/local/pvpgn/var/pvpgn/charinfo
+/usr/local/pvpgn/var/pvpgn/charsave
+/usr/local/pvpgn/var/pvpgn/ladders/d2ladder.xml"
+/usr/local/pvpgn/var/pvpgn/logs/games.txt"
