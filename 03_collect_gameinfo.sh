@@ -31,7 +31,7 @@ spawn /usr/local/pvpgn/bin/bnchat --client=D2XP 192.168.88.41 6112
 expect "Username:"
 send "webstat\r"
 expect "Password:"
-send "aman\r"
+send "yourpasswordforwebstat\r"
 
 sleep 1
 
