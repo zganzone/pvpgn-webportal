@@ -1,0 +1,13 @@
+<Info> Running version PvPGN 1.99.7.2.1-PRO on d2.
+<Info> This server is hosted by ZGAN
+<Info>
+<Info> There are 9 user accounts on this server.
+<Info> There are currently 1 users in 0 games of Diablo II Lord of Destruction,
+<Info> and 1 users playing 0 games and chatting in 44 channels.
+<Info> Having trouble with a command? Type /help to
+<Info> learn more about it.
+<Info> Type /language to switch translation.
+<Info>
+<Info>  Check this url
+<Info>  http://192.168.88.41/
+<Info> Connection closed.

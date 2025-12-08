@@ -1,0 +1,44 @@
+spawn /usr/local/pvpgn/bin/bnchat --client=D2XP 192.168.88.41 6112
+Connected to 192.168.88.41:6112.
+Could not bind to standard UDP port 6112, trying others. (psock_bind: Address already in use)
+Got UDP data on port 6113
+my tzbias = -120 (0x0000ff88)
+Got AUTHREQ_109
+Got AUTHREPLY_109
+Got ICONREPLY
+----
+Enter your login information
+Username: wUsername: weUsername: webUsername: websUsername: webstUsername: webstaUsername: webstatUsername: webstat
+Password: Password: Password: Password: Password: 
+Logged in.
+----
+]   Joining channel :"Diablo II-1" [Public]
+]   "webstat" [Plug] is here
+]   <Error> Hello webstat, welcome to PvPGN Realm!
+]   <Info> Running version PvPGN 1.99.7.2.1-PRO on d2.
+]   <Info> This server is hosted by ZGAN
+]   <Info>  
+]   <Info> There are 9 user accounts on this server.
+]   <Info> There are currently 1 users in 0 games of Diablo II Lord of Destruction,
+]   <Info> and 1 users playing 0 games and chatting in 44 channels.
+]   <Info> Having trouble with a command? Type /help to
+]   <Info> learn more about it.
+]   <Info> Type /language to switch translation.
+]   <Info>  
+]   <Info>  Check this url 
+]   <Info>  http://192.168.88.41/
+]   <webstat> You have no mail.
+] /players          ]   <Error> Unknown command.
+] /games        ]   <Info> Currently accessible games:
+]   <Info>  ------name------ p -status- --------type--------- count --------addr--------
+] /channels           ]   <Info> --------------------------------------------------------
+]   <Error> /channels [gametag] (alias: /chs)
+]   <Info>    Displays a list of channels.
+]   <Info> --------------------------------------------------------
+]   <Error>    /channels all
+]   <Info>       Displays a list of all channels.
+]   <Info>       
+] /info       ]   <Error> Unknown command.
+] /exit       ]   <Info> Connection closed.
+]   ----
+Connection closed by server.
