@@ -22,3 +22,8 @@ secrets.yml
 
 # other
 node_modules/
+bnchat_raw.txt
+gameinfo.json
+gameinfo_clean.txt
+gameinfo_raw.txt
+games_list.txt
