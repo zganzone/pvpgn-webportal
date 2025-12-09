@@ -1,6 +1,6 @@
 #!/bin/bash
 
-ID_FILE="logs/game_ready_ids.txt"
+ID_FILE="/usr/local/pvpgn/tools/d2consoleportal/logs/game_ready_ids.txt"
 EXPECT_CL_SCRIPT="/usr/local/pvpgn/tools/d2consoleportal/04_d2gs_get_cl.exp"
 
 # Даване на права за изпълнение на Expect скрипта

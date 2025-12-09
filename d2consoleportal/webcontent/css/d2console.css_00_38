@@ -1,0 +1,110 @@
+/* d2console.css - minimal Diablo-like styling */
+
+/* Global */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #0f1113;
+  color: #e6eef6;
+  margin: 18px;
+}
+h1 { text-align:center; color:#00baff; margin:0; font-weight:700; }
+p.sub { text-align:center; color:#9fb5c8; margin:6px 0 12px 0; font-size:0.95rem; }
+
+/* Links (two buttons under title) */
+.links { display:flex; justify-content:center; gap:12px; margin-bottom:12px; }
+.links a {
+  display:inline-block; padding:10px 18px; background:#121416; color:#79d1ff;
+  text-decoration:none; border-radius:6px; font-weight:700;
+}
+.links a:hover { background:#1e2225; }
+
+/* Server summary: horizontal cards */
+.summary {
+  display:flex; gap:12px; flex-wrap:nowrap; overflow-x:auto; padding:8px 6px;
+  margin-bottom:18px; justify-content:center;
+}
+.card {
+  background:#121416; padding:12px 18px; border-radius:8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4); min-width:320px;
+  color:#e6eef6;
+}
+.card .inline { display:flex; gap:12px; align-items:center; flex-wrap:wrap; }
+
+/* bold labels */
+.card .inline span { font-weight:600; color:#fff; }
+
+/* Games container */
+#games-container { padding-bottom:40px; }
+
+/* Game card */
+.game {
+  border:2px solid #444; margin:12px auto; padding:12px; background:#2b2b2b; border-radius:8px;
+  max-width:1100px;
+}
+.game h2 { margin:0 0 6px 0; color:#ffcc66; }
+
+/* difficulty border left */
+.normal-game { border-left:5px solid #00ff00; }
+.nightmare-game { border-left:5px solid #ff9900; }
+.hell-game { border-left:5px solid #ff0000; }
+
+/* tables */
+table { width:100%; border-collapse:collapse; margin-top:8px; }
+th, td { padding:6px; border:1px solid #444; }
+th { background:#161616; color:#ffcc00; }
+td { background:#1b1b1b; color:#ddd; }
+
+/* character */
+.character { margin-top:10px; padding:8px; background:#171717; border-radius:6px; border:1px solid #333; }
+.character h3 { margin:0; color:#66ccff; }
+.item-stats { margin-top:6px; color:#cfd6db; font-size:0.95rem; }
+
+/* inventory grid */
+.inventory { display:grid; grid-template-columns: repeat(10, 32px); grid-auto-rows: 32px; gap:4px; margin-top:8px; }
+.slot { width:32px; height:32px; background:#222; border:1px solid #444; border-radius:3px; position:relative; }
+.slot img { width:28px; height:28px; object-fit:contain; display:block; margin:auto; }
+
+/* responsive */
+@media (max-width:800px) {
+  .card { min-width:220px; }
+  .inventory { grid-template-columns: repeat(8, 32px); }
+}
+/* --- XP Bar Visualization --- */
+.xp-container {
+    margin: 8px 0;
+    padding: 5px;
+    background-color: #2a2a2a; /* Тъмен фон */
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+.xp-bar-wrapper {
+    background-color: #1a1a1a;
+    border-radius: 3px;
+    height: 10px;
+    margin-bottom: 4px;
+    overflow: hidden;
+}
+
+.xp-bar {
+    height: 100%;
+    transition: width 0.3s ease;
+}
+
+/* --- XP Bar Colors (Базирани на запълване) --- */
+.xp-rate-low { background-color: #1abc9c; }      /* 1x - 2x (1-3 играча) */
+.xp-rate-medium { background-color: #f39c12; }   /* 2.5x - 3.5x (4-6 играча) */
+.xp-rate-high { background-color: #e74c3c; }     /* 4.0x - 4.5x (7-8 играча) */
+
+/* Текстов индикатор (под бара) */
+.xp-text {
+    display: flex;
+    justify-content: space-between;
+    color: #ccc;
+    font-size: 0.8em;
+}
+
+.xp-multiplier { color: #fff; }

@@ -12,11 +12,14 @@ sleep 1
 sleep 1
 /usr/local/pvpgn/tools/d2consoleportal/03.d2gs_cl_runner.sh
 sleep 1
-python3 /usr/local/pvpgn/tools/d2consoleportal/05.gameinfo2json.py
+#python3 /usr/local/pvpgn/tools/d2consoleportal/05.gameinfo2json.py
+python3 /usr/local/pvpgn/tools/d2consoleportal/05.gameinfo2json_v2.py
 sleep 1
-python3 /usr/local/pvpgn/tools/d2consoleportal/08_build_ladder.py
+python3 /usr/local/pvpgn/tools/d2consoleportal/06_build_ladder.py
 sleep 1
-python3 /usr/local/pvpgn/tools/d2consoleportal/09.generate_items_json.py
+python3 /usr/local/pvpgn/tools/d2consoleportal/07.generate_items_json.py
+/usr/local/pvpgn/tools/d2consoleportal/07.char2json -o /var/www/html/data/
+python3 /usr/local/pvpgn/tools/d2consoleportal/08.d2gs_time_ands_status_json.py
 /usr/local/pvpgn/tools/d2consoleportal/cronfile.sh
 sleep 1
-python3 /usr/local/pvpgn/tools/d2consoleportal/10.charitemstat.py
+#python3 /usr/local/pvpgn/tools/d2consoleportal/10.charitemstat.py

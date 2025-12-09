@@ -4,7 +4,7 @@
 set HOST "192.168.88.41"
 set PORT "8888"
 set PASSWORD "abcd123"
-set RAW_OUTPUT_DIR "logs/cl_output"
+set RAW_OUTPUT_DIR "/usr/local/pvpgn/tools/d2consoleportal/logs/cl_output"
 
 # 1. Get Game ID from command line arguments
 if {$argc < 1} {

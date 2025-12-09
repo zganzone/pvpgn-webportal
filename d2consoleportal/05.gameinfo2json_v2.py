@@ -2,12 +2,49 @@
 import json
 import re
 import os
+from typing import Dict, Any
 
 # Paths
 ids_file = "/usr/local/pvpgn/tools/d2consoleportal/logs/game_ready_ids.txt"
 logs_dir = "/usr/local/pvpgn/tools/d2consoleportal/logs/cl_output"
 
 all_games = []
+
+# === НОВА ФУНКЦИЯ: ИЗЧИСЛЯВАНЕ НА XP RATE ===
+def calculate_xp_rate(game_data: Dict[str, Any]) -> Dict[str, Any]:
+    """
+    Изчислява XP Rate, базиран на броя на играчите (UserCount)
+    по формулата на D2: XP Rate = (n + 1) / 2
+    """
+    game_info = game_data.get("GameInfo", {})
+    user_count_str = game_info.get("UserCount")
+
+    if not user_count_str:
+        user_count = 0
+    else:
+        try:
+            user_count = int(user_count_str)
+        except ValueError:
+            user_count = 0
+            
+    # XP Rate Calculation
+    # Ако UserCount е 0 или 1, множителят е 1.0 (Base XP)
+    if user_count >= 1:
+        xp_rate = (user_count + 1) / 2
+    else:
+        xp_rate = 1.0
+
+    # Добавяне на новото поле към GameInfo
+    game_info["UserCount"] = user_count # Записваме го като int
+    game_info["XPRateMultiplier"] = round(xp_rate, 2)
+    
+    # Форматиране на бонуса (напр. "+350%")
+    xp_bonus_percent = (xp_rate - 1.0) * 100
+    game_info["XPBonusPercent"] = f"+{round(xp_bonus_percent):.0f}%"
+
+    game_data["GameInfo"] = game_info
+    return game_data
+# ============================================
 
 def parse_game_file(filepath):
     game_info = {}
@@ -31,9 +68,11 @@ def parse_game_file(filepath):
             char_table_started = True
             continue
         if char_table_started:
+            # Skip separators and empty lines
             if line.startswith("+---") or line.strip() == "":
                 continue
             if line.startswith("|"):
+                # ... (Parses character data) ...
                 no = line[2:6].strip()
                 acct = line[6:22].strip()
                 charname = line[22:40].strip()
@@ -65,6 +104,10 @@ for gid in game_ids:
     filepath = os.path.join(logs_dir, f"cl_{gid}_raw.txt")
     if os.path.exists(filepath):
         game_json = parse_game_file(filepath)
+        
+        # === ИЗЧИСЛЯВАНЕ НА XP RATE ВЕЧЕ ТУК ===
+        game_json = calculate_xp_rate(game_json)
+        
         all_games.append(game_json)
     else:
         print(f"Warning: file {filepath} not found")
