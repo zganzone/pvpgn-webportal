@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Diablo 2 Item Report</title>
+<link rel="stylesheet" href="css/d2console.css">
+<style>
+/* Специфични стилове за Item Report, базирани на d2console.css */
+body {
+    background: #0f1113; /* Тъмен фон */
+    color: #e6eef6;
+    padding: 18px;
+}
+h1 { 
+    color: #00baff; /* Синьо заглавие */
+}
+
+/* Стил за таблицата с предмети */
+#itemsTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    max-width: 1200px;
+}
+#itemsTable th, #itemsTable td {
+    border: 1px solid #444; /* Тъмни граници */
+    padding: 8px;
+    vertical-align: top;
+    text-align: left;
+    background: #1b1b1b; /* Тъмен фон на клетките */
+    color: #ddd;
+}
+#itemsTable th {
+    background: #161616;
+    color: #ffcc00; /* Златно заглавие */
+    cursor: pointer;
+}
+
+/* Цветове на предметите */
+.unique { color: #ff9900; font-weight: bold; } /* Оранжево/Жълто */
+.set { color: #00ff00; font-weight: bold; } /* Зелено */
+.rune { color: #66ccff; } /* Светлосиньо */
+.empty { color: #555; font-style: italic; }
+
+/* Стил за контролите */
+.controls-container input {
+    background: #2b2b2b;
+    color: #ddd;
+    border: 1px solid #444;
+    padding: 4px;
+    width: 300px;
+}
+.controls-container button {
+    background: #333;
+    color: #ffcc00;
+    border: 1px solid #ffcc00;
+    padding: 6px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.controls-container button:hover {
+    background: #444;
+}
+
+</style>
+</head>
+<body>
+
+<div class="links" style="margin-top:20px;">
+    <a href="index.html">← Back to Realm Stats</a>
+</div>
+
+<h1>PvPGN Item Report (All Stash & Inventory)</h1>
+
+<div class="controls-container" style="margin-bottom:15px;">
+    <button onclick="expandAll()">Expand All</button>
+    <button onclick="collapseAll()">Collapse All</button>
+    &nbsp; 
+    <input id="searchInput" placeholder="Search character/account/item..." oninput="filterTable()" />
+    &nbsp; 
+    <button onclick="exportJSON()">Export JSON</button>
+</div>
+
+<table id="itemsTable">
+    <thead>
+        <tr>
+            <th data-col="account">Account</th>
+            <th data-col="charname">Character</th>
+            <th data-col="unique_set">Unique / Set</th>
+            <th data-col="runes">Runes</th>
+            <th data-col="rings">Rings</th>
+            <th data-col="belts">Belts</th>
+            <th data-col="amulets">Amulets</th>
+            <th data-col="charms">Charms (S/L/G)</th>
+            <th data-col="weapons">Weapons</th>
+            <th data-col="armors">Armor</th>
+            <th data-col="other">Other</th>
+        </tr>
+    </thead>
+    <tbody>
+        </tbody>
+</table>
+
+<script src="js/charitems.js"></script>
+</body>
+</html>

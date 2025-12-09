@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Diablo 2 Console - Realm Stats</title>
+<link rel="stylesheet" href="css/d2console.css">
+</head>
+<body>
+
+<h1>Diablo 2 Realm Statistics</h1>
+<p class="sub">Last updated: <span id="last-updated"></span></p>
+
+<div class="links">
+    <a href="http://192.168.88.41/webstat.html" target="_blank">Items Stat</a>
+    <a href="http://192.168.88.41/webladder.html" target="_blank">Ladder Stat</a>
+</div>
+<!-- Server Cards -->
+<div id="servers-container" class="summary"></div>
+
+
+
+<!-- Games Container -->
+<div id="games-container"></div>
+
+<script src="js/d2console.js"></script>
+<script>
+async function loadServerStats() {
+    try {
+        // Load XML with cache-bust
+        const response = await fetch("games.txt?ts=" + Date.now());
+        const xmlText = await response.text();
+        const parser = new DOMParser();
+        const xml = parser.parseFromString(xmlText, "text/xml");
+
+        const s = xml.getElementsByTagName("server")[0];
+
+        // Extract fields
+        const location = s.getElementsByTagName("location")[0].textContent.trim();
+        const users = s.getElementsByTagName("users")[0].textContent.trim();
+        const games = s.getElementsByTagName("games")[0].textContent.trim();
+        const totalGames = s.getElementsByTagName("total_games")[0].textContent.trim();
+        const logins = s.getElementsByTagName("logins")[0].textContent.trim();
+        const uptime = parseInt(s.getElementsByTagName("uptime")[0].textContent.trim());
+
+        // Convert uptime
+        const h = Math.floor(uptime / 3600);
+        const m = Math.floor((uptime % 3600) / 60);
+        const sec = uptime % 60;
+        const uptimeHuman = `${h}h ${m}m ${sec}s`;
+
+        // Insert card
+        document.getElementById("servers-container").innerHTML = `
+        <div class="card">
+            <h2>${location}</h2>
+            <p>Users: ${users}</p>
+            <p>Games: ${games}</p>
+            <p>Total: ${totalGames}</p>
+            <p>Logins: ${logins}</p>
+            <p>Uptime: ${uptimeHuman}</p>
+        </div>`;
+    } catch (err) {
+        console.error("Failed to load server stats:", err);
+    }
+}
+
+document.addEventListener("DOMContentLoaded", loadServerStats);
+</script>
+
+</body>
+</html>

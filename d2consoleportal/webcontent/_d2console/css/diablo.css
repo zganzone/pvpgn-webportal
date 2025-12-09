@@ -1,0 +1,52 @@
+body {
+    font-family: 'Garamond', 'Times New Roman', serif;
+    background-color: #1c1c1c;
+    color: #f5d083;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    color: #f5d083;
+    text-shadow: 2px 2px 4px #000;
+}
+
+p.sub {
+    text-align: center;
+    color: #e0d4a0;
+}
+
+.server-cards {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.card {
+    background-color: #2b2b2b;
+    padding: 10px 15px;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    text-align: center;
+    min-width: 100px;
+    font-weight: bold;
+}
+
+.table {
+    width: 90%;
+    margin: 0 auto 20px auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #f5d083;
+    padding: 6px 12px;
+    text-align: center;
+}
+
+tr:nth-child(even) { background-color: #2e2b2b; }
+
+tr:hover { background-color: #5a3e1b; color: #fff; font-weight: bold; }

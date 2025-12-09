@@ -1,0 +1,91 @@
+{
+  "active_games_detail": [
+    {
+      "id": "12",
+    "players": [
+      {
+        "name": "[Difficult",
+        "level": :,
+        "class": "nightmare",
+        "status": "]",
+        "ip": "[IsLadder"
+      },
+      {
+        "name": "[CreateTime",
+        "level": :,
+        "class": "23:20:21",
+        "status": "]",
+        "ip": "[Disable"
+      },
+      {
+        "name": "[CreatorAcct:",
+        "level": zgan4,
+        "class": "]",
+        "status": "[CreatorChar:",
+        "ip": "zganvazonka"
+      },
+      {
+        "name": "|",
+        "level": 001,
+        "class": "zgan",
+        "status": "Sorsi",
+        "ip": "192.168.88.101"
+      },
+      {
+        "name": "|",
+        "level": 002,
+        "class": "zgan4",
+        "status": "zganvazonka",
+        "ip": "192.168.88.101"
+      },
+      {
+        "name": "Total:",
+        "level": 2,
+        "class": "charaters",
+        "status": "in",
+        "ip": "this"
+      }
+    ]
+    },
+    {
+      "id": "11",
+    "players": [
+      {
+        "name": "[Difficult",
+        "level": :,
+        "class": "normal",
+        "status": "]",
+        "ip": "[IsLadder"
+      },
+      {
+        "name": "[CreateTime",
+        "level": :,
+        "class": "23:20:11",
+        "status": "]",
+        "ip": "[Disable"
+      },
+      {
+        "name": "[CreatorAcct:",
+        "level": zgan2,
+        "class": "]",
+        "status": "[CreatorChar:",
+        "ip": "palqk"
+      },
+      {
+        "name": "|",
+        "level": 001,
+        "class": "zgan2",
+        "status": "palqk",
+        "ip": "192.168.88.101"
+      },
+      {
+        "name": "Total:",
+        "level": 1,
+        "class": "charaters",
+        "status": "in",
+        "ip": "this"
+      }
+    ]
+    }
+  ]
+}

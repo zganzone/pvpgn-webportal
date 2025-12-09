@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Diablo 2 Console</title>
+<style>
+/* === GLOBAL === */
+body {
+  font-family: "Trebuchet MS", sans-serif;
+  margin: 0;
+  background-color: #1b1b1b;
+  color: #f0f0f0;
+}
+h1 { text-align: center; color: #ffcc00; text-shadow: 1px 1px 4px black; padding: 20px; }
+
+/* === SERVER CARDS === */
+.server-cards { display: flex; flex-wrap: wrap; justify-content: center; margin: 20px; }
+.server-card {
+  border: 2px solid #444;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 15px;
+  width: 250px;
+  background-color: #2b2b2b;
+}
+.server-card h2 { color: #66ccff; margin: 0; }
+.server-card p { margin: 5px 0; }
+
+/* === GAME CARDS === */
+.game {
+  border: 2px solid #444;
+  margin: 20px;
+  padding: 10px;
+  background: #2b2b2b;
+  border-radius: 8px;
+}
+.game h2 { color: #ff9933; }
+
+/* === TABLES === */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+th, td {
+  border: 1px solid #555;
+  padding: 5px;
+  text-align: left;
+}
+th { background-color: #333; color: #ffcc00; }
+td { background-color: #222; }
+
+/* === CHARACTER CARDS === */
+.character {
+  margin-top: 10px;
+  border: 1px solid #555;
+  border-radius: 6px;
+  padding: 5px;
+  background-color: #222;
+}
+.character h3 { color: #66ccff; margin: 0; }
+
+/* === GRID STYLE === */
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.grid-card {
+  border: 2px solid #444;
+  margin: 10px;
+  padding: 10px;
+  width: 300px;
+  background: #2b2b2b;
+  border-radius: 8px;
+}
+.grid-card h2 { color: #ff9933; }
+.grid-card p { margin: 3px 0; }
+</style>
+</head>
+<body>
+<h1>Diablo 2 Console</h1>
+
+<!-- SERVER CARDS TOP -->
+<div id="servers-container" class="server-cards"></div>
+
+<!-- GAMES CONTAINER -->
+<div id="games-container"></div>
+
+<script>
+// === FILES PATHS ===
+const gamesJSON = '/d2console/all_games.json';
+const serverXML = '/d2console/games.txt';
+const charsDir = '/d2console/';
+
+// Helper to fetch JSON
+async function fetchJSON(path) {
+  const res = await fetch(path);
+  return await res.json();
+}
+
+// Helper to fetch XML
+async function fetchXML(path) {
+  const res = await fetch(path);
+  const text = await res.text();
+  return new DOMParser().parseFromString(text, "application/xml");
+}
+
+// Helper to fetch character JSON dynamically
+async function fetchCharJSON(name) {
+  const path = `${charsDir}${name}.json`;
+  try {
+    const res = await fetch(path);
+    if (!res.ok) return null;
+    return await res.json();
+  } catch(e) {
+    return null;
+  }
+}
+
+// Load server info cards
+async function loadServers() {
+  const xml = await fetchXML(serverXML);
+  const servers = xml.querySelectorAll('server');
+  const container = document.getElementById('servers-container');
+
+  servers.forEach(s => {
+    const card = document.createElement('div');
+    card.classList.add('server-card');
+    card.innerHTML = `
+      <h2>${s.querySelector('location')?.textContent || '-'}</h2>
+      <p><strong>IP:</strong> ${s.querySelector('address')?.textContent || '-'}:${s.querySelector('port')?.textContent || '-'}</p>
+      <p><strong>Software:</strong> ${s.querySelector('software')?.textContent || '-'}</p>
+      <p><strong>Users:</strong> ${s.querySelector('users')?.textContent || '0'}</p>
+      <p><strong>Games:</strong> ${s.querySelector('games')?.textContent || '0'}</p>
+      <p><strong>Uptime:</strong> ${s.querySelector('uptime')?.textContent || '0'}s</p>
+      <p><strong>URL:</strong> <a href="${s.querySelector('url')?.textContent || '#'}" target="_blank">link</a></p>
+    `;
+    container.appendChild(card);
+  });
+}
+
+// Load all games and characters
+async function loadGames() {
+  const data = await fetchJSON(gamesJSON);
+  const container = document.getElementById('games-container');
+
+  for (const game of data) {
+    const g = game.GameInfo;
+    const chars = game.Characters;
+
+    const gameDiv = document.createElement('div');
+    gameDiv.classList.add('game');
+    gameDiv.innerHTML = `
+      <h2>${g.GameName} [ID: ${g.GameID}] - ${g.Difficult}</h2>
+      <table>
+        <tr><th>GameVer</th><td>${g.GameVer || '-'}</td></tr>
+        <tr><th>GameType</th><td>${g.GameType || '-'}</td></tr>
+        <tr><th>IsLadder</th><td>${g.IsLadder || '-'}</td></tr>
+        <tr><th>UserCount</th><td>${g.UserCount || '-'}</td></tr>
+        <tr><th>CreateTime</th><td>${g.CreateTime || '-'}</td></tr>
+        <tr><th>Disable</th><td>${g.Disable || '-'}</td></tr>
+        <tr><th>Creator</th><td>${g.CreatorAcct || '-'} / ${g.CreatorChar || '-'}</td></tr>
+      </table>
+    `;
+
+    // Characters
+    for (const c of chars) {
+      const charData = await fetchCharJSON(c.CharName) || {};
+      const charDiv = document.createElement('div');
+      charDiv.classList.add('character');
+      charDiv.innerHTML = `
+        <h3>${c.CharName} (${c.Class} - Level ${c.Level})</h3>
+        <table>
+          <tr><th>AcctName</th><td>${c.AcctName}</td></tr>
+          <tr><th>IP</th><td>${c.IPAddress}</td></tr>
+          <tr><th>EnterTime</th><td>${c.EnterTime}</td></tr>
+          <tr><th>Extra Info</th><td>${charData.description || '-'}</td></tr>
+        </table>
+      `;
+      gameDiv.appendChild(charDiv);
+    }
+
+    container.appendChild(gameDiv);
+  }
+}
+
+// Load both
+loadServers();
+loadGames();
+</script>
+</body>
+</html>

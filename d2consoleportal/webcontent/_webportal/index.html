@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Active Games</title>
+<style>
+body {
+    font-family: 'Garamond', 'Times New Roman', serif;
+    background-color: #1c1c1c;
+    color: #f5d083;
+    margin: 18px;
+}
+h1 {
+    text-align: center;
+    color: #f5d083;
+    text-shadow: 2px 2px 4px #000;
+}
+p.sub {
+    text-align: center;
+    color: #f5d083;
+    margin: 4px 0 18px 0;
+    font-size: 0.95rem;
+}
+.summary {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+.card {
+    background-color: #2b2b2b;
+    padding: 16px 24px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(245,208,131,0.5);
+    text-align: center;
+    min-width: 100px;
+}
+.card h2 {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #f5d083;
+}
+.card p {
+    margin: 4px 0 0 0;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #fff;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background-color: #2b2b2b;
+    border: 2px solid #f5d083;
+}
+th, td {
+    padding: 8px;
+    border-bottom: 1px solid rgba(245,208,131,0.2);
+    text-align: left;
+    color: #f5d083;
+}
+th {
+    background-color: #3a2f2f;
+    text-shadow: 1px 1px 2px #000;
+}
+tr:nth-child(even) {
+    background-color: #2e2b2b;
+}
+tr:hover {
+    background-color: #5a3e1b;
+    color: #fff;
+    font-weight: bold;
+}
+.diff-normal { color: #0f0; font-weight: bold; }
+.diff-nightmare { color: #ff8c00; font-weight: bold; }
+.diff-hell { color: #f00; font-weight: bold; }
+.links {
+    text-align: center;
+    margin: 10px 0 20px 0;
+}
+.links a {
+    color: #f5d083;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
+}
+.links a:hover {
+    text-decoration: underline;
+}
+</style>
+</head>
+<body>
+
+<h1>Active Games</h1>
+<p class="sub" id="lastUpdated">Last updated: --</p>
+
+<div class="links">
+    <a href="http://192.168.88.41/webstat.html" target="_blank">Items Stat</a>
+    <a href="http://192.168.88.41/webladder.html" target="_blank">Ladder Stat</a>
+</div>
+
+<div class="summary" id="serverCards">
+    <!-- Server cards will be inserted here -->
+</div>
+
+<table id="gamesTable">
+<thead>
+<tr>
+<th>Name</th>
+<th>Owner</th>
+<th>Address</th>
+<th>Created</th>
+<th>Status</th>
+<th>Type</th>
+<th>Difficulty</th>
+<th>Players</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+
+<script>
+async function loadData() {
+    try {
+        // Update last updated timestamp
+        document.getElementById("lastUpdated").textContent = "Last updated: " + new Date().toLocaleString();
+
+        // Load server stats
+        const serverResponse = await fetch("/webportal/data/games.txt");
+        const serverText = await serverResponse.text();
+        const parser = new DOMParser();
+        const xmlDoc = parser.parseFromString("<root>" + serverText + "</root>", "text/xml");
+        const s = xmlDoc.querySelector("server");
+
+        const users = s.querySelector("users")?.textContent || 0;
+        const channels = s.querySelector("channels")?.textContent || 0;
+        const activeGames = s.querySelector("games")?.textContent || 0;
+        const logins = s.querySelector("logins")?.textContent || 0;
+        const uptime = s.querySelector("uptime")?.textContent || 0;
+
+        const serverCards = document.getElementById("serverCards");
+        serverCards.innerHTML = `
+            <div class="card"><h2>Users</h2><p>${users}</p></div>
+            <div class="card"><h2>Channels</h2><p>${channels}</p></div>
+            <div class="card"><h2>Active Games</h2><p>${activeGames}</p></div>
+            <div class="card"><h2>Logins</h2><p>${logins}</p></div>
+            <div class="card"><h2>Uptime</h2><p>${uptime}s</p></div>
+        `;
+
+        // Load active games
+        const gamesResponse = await fetch("/webportal/data/gameinfo.json");
+        const games = await gamesResponse.json();
+        const tbody = document.querySelector("#gamesTable tbody");
+        tbody.innerHTML = "";
+
+        games.forEach(g => {
+            if (!g.status || g.status !== "open") return;
+
+            let diffClass = "diff-normal";
+            if (g.difficulty === "nightmare") diffClass = "diff-nightmare";
+            if (g.difficulty === "hell") diffClass = "diff-hell";
+
+            let players = (g.players && g.players.length) ? g.players.length : 0;
+
+            const row = `
+                <tr>
+                    <td>${g.game_name}</td>
+                    <td>${g.owner}</td>
+                    <td>${g.address}</td>
+                    <td>${g.created}</td>
+                    <td>${g.status}</td>
+                    <td>${g.type}</td>
+                    <td class="${diffClass}">${g.difficulty}</td>
+                    <td>${players}</td>
+                </tr>
+            `;
+            tbody.innerHTML += row;
+        });
+    } catch (e) {
+        console.error("Error loading data:", e);
+    }
+}
+
+// Initial load
+loadData();
+</script>
+
+</body>
+</html>

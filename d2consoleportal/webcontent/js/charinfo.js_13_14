@@ -1,0 +1,209 @@
+// --- helpers (Общи) ---
+function numericOrDash(v){ if(v===null||v===undefined||v==='') return '-'; return v; }
+
+// --- Агресивно почистване на името за съпоставка ---
+function cleanCharName(name) {
+    if (!name) return '';
+    return name.toLowerCase().trim().replace(/\s+/g, ''); // Премахва интервали и превръща в малки букви
+}
+
+async function fetchJSON(path){
+  const r = await fetch(path + '?_=' + Date.now());
+  if(!r.ok) return null;
+  return await r.json();
+}
+
+// ... [fetchXML, getXMLText, formatExperience, translateClass - ОСТАВАТ СЪЩИТЕ] ...
+
+async function fetchXML(path){
+  try {
+        const r = await fetch(path + '?_=' + Date.now());
+        if (!r.ok) throw new Error(`HTTP Error: ${r.status} ${r.statusText}`);
+        const text = await r.text();
+        const parser = new DOMParser();
+        const xmlDoc = parser.parseFromString(text, 'application/xml');
+        if (xmlDoc.getElementsByTagName('parsererror').length > 0) throw new Error('XML Syntax Error');
+        return xmlDoc;
+    } catch(e) {
+        console.error("Fetch/Parse Error for XML:", e);
+        throw e; 
+    }
+}
+
+function getXMLText(elem, tag) {
+    const child = elem.querySelector(tag);
+    if (child && child.textContent) {
+        return child.textContent.trim();
+    }
+    return "";
+}
+
+function formatExperience(exp) {
+    const num = parseInt(exp);
+    return isNaN(num) || num === 0 ? '-' : new Intl.NumberFormat('en-US').format(num);
+}
+
+function translateClass(shortName) {
+    const map = {
+        'AMA': 'Amazon', 'BAR': 'Barbarian', 'NEC': 'Necromancer', 
+        'PAL': 'Paladin', 'SOR': 'Sorceress', 'DRU': 'Druid', 
+        'AS': 'Assassin', 'ZGANSASIN': 'Assassin', 'SORSI SOR': 'Sorceress', 'ASS': 'Assassin'
+    };
+    const clean = shortName.toUpperCase().trim().replace(/\s/g, ''); 
+    return map[clean] || shortName; 
+}
+
+
+async function getExperienceFromLadder(charName) {
+    let xmlDoc;
+    try {
+        xmlDoc = await fetchXML('data/d2ladder.xml');
+    } catch(e) {
+        return null; 
+    }
+    
+    if (!xmlDoc) return null;
+    
+    const charNameLower = cleanCharName(charName); // Използваме почистеното име
+    let bestRankExp = null;
+    let bestRank = Infinity;
+
+    const ladderEntries = xmlDoc.querySelectorAll('ladder');
+    
+    for (const ladder of ladderEntries) {
+        const ladderType = getXMLText(ladder, 'type');
+        const typeId = parseInt(ladderType);
+
+        if (typeId < 27 || typeId > 34) {
+            continue; 
+        }
+
+        const charEntries = ladder.querySelectorAll('char');
+        for (const entry of charEntries) {
+            const nameElement = entry.querySelector('name');
+            
+            // Сравняваме почистени имена
+            if (nameElement && cleanCharName(nameElement.textContent) === charNameLower) {
+                const expElement = entry.querySelector('experience');
+                const rankElement = entry.querySelector('rank');
+                
+                if (expElement && rankElement) {
+                    const currentRank = parseInt(rankElement.textContent.trim());
+                    
+                    if (currentRank < bestRank) {
+                        bestRank = currentRank;
+                        bestRankExp = formatExperience(expElement.textContent.trim());
+                    }
+                }
+            }
+        }
+    }
+    
+    return bestRankExp; 
+}
+
+
+function getCharNameFromUrl() {
+    const params = new URLSearchParams(window.location.search);
+    // Извличаме името от URL и го почистваме веднага
+    return cleanCharName(params.get('name')); 
+}
+
+// Намира статистика за героя от all_items.json
+function findCharStats(charNameLower, allItemsData) {
+    if (!allItemsData || !allItemsData.rows) return null;
+    
+    // Търсене с почистени имена
+    const targetRow = allItemsData.rows.find(row => 
+        row.charname && cleanCharName(row.charname) === charNameLower
+    );
+    
+    return targetRow ? targetRow.char_stats : null;
+}
+
+
+async function loadCharInfo() {
+    const charName = getCharNameFromUrl();
+    if (!charName) {
+        document.getElementById('char-name').textContent = 'Error: Character name missing.';
+        return;
+    }
+    
+    // 1. Асинхронно зареждане на всички необходими данни
+    const [charData, ladderExp, allItemsData] = await Promise.all([
+        // Използваме charName без почистване за fetch, ако името на JSON файла е с интервали/главни букви (въпреки че трябва да е малки)
+        fetchJSON(`data/${charName}.replace(/-/g, '').replace(/ /g, '').json`), // опитваме се да го докараме до име на файл
+        getExperienceFromLadder(charName),
+        fetchJSON('data/all_items.json')
+    ]);
+
+    // 2. Обработка на основните данни
+    
+    // Получаваме името на героя, както е записано в JSON (за показване с коректен регистър)
+    const charNameForDisplay = allItemsData ? (allItemsData.rows.find(row => cleanCharName(row.charname) === charName) || {}).charname : charName;
+
+
+    if (!charData || !charData.character_info) {
+        // Ако charname.json не се зареди, но all_items.json се зареди, продължаваме само със статистиките
+        if (!allItemsData || !allItemsData.rows || findCharStats(charName, allItemsData) === null) {
+            document.getElementById('char-name').textContent = `Error: Data for ${charName} not found.`;
+            document.getElementById('char-summary').textContent = `Cannot load char data or stats.`;
+            return;
+        }
+    }
+    
+    // [FALLBACK/PRIMARY DATA]
+    const ci = charData ? charData.character_info : {};
+    const ists = charData ? charData.item_stats || {} : {};
+    
+    // [NEW STATS] - Тези трябва да са пълни
+    const newStats = findCharStats(charName, allItemsData) || {}; 
+    
+    // Обединяване на данни: Новите статистики имат приоритет над старите
+    const statsToUse = { ...ci, ...newStats }; 
+
+    // 3. Попълване на UI
+    
+    // Life/Mana Fix: Използваме Max Life/Mana, ако текущото е 0 или липсва
+    const currentLife = statsToUse.life > 0 ? statsToUse.life : statsToUse.max_life;
+    const currentMana = statsToUse.mana > 0 ? statsToUse.mana : statsToUse.max_mana;
+
+    const experienceValue = ladderExp || numericOrDash(ci.experience); 
+    
+    // 3a. Заглавие
+    const charLevel = numericOrDash(statsToUse.level);
+    const charClass = translateClass(statsToUse.class || ci.class || 'Unknown');
+
+    document.getElementById('char-name').textContent = charNameForDisplay || ci.name || charName;
+    document.getElementById('char-summary').innerHTML = `${charClass} — Level ${charLevel} (${ci.expansion_type || 'Classic'} / ${ci.mode || 'Softcore'})`;
+    
+    // 3b. Статистики за Предметите
+    document.getElementById('item-stats-summary').innerHTML = `
+        Total Items: ${ists.total_items || 0} | Normal: ${ists.normal || 0} | Magic: ${ists.magic || 0} | Set: ${ists.set || 0} | Unique: ${ists.unique || 0}
+    `;
+
+    // 3c. Детайли за Героя
+    document.getElementById('char-details').innerHTML = `
+        <div class="stat-item"><span>Account</span><span>${numericOrDash(ci.account_name)}</span></div>
+        <div class="stat-item"><span>Experience</span><span>${experienceValue}</span></div>
+        <div class="stat-item"><span>Level</span><span>${charLevel}</span></div>
+        <div class="stat-item"><span>Gold (Inv)</span><span>${numericOrDash(statsToUse.gold)}</span></div>
+        <div class="stat-item"><span>Gold (Stash)</span><span>${numericOrDash(ci.gold_stash)}</span></div>
+        <div class="stat-item"><span>Last Played</span><span>${numericOrDash(ci.last_played)}</span></div>
+    `;
+
+    // 3d. Основни Атрибути
+    document.getElementById('attributes').innerHTML = `
+        <div class="stat-item"><span>Strength</span><span>${numericOrDash(statsToUse.strength)}</span></div>
+        <div class="stat-item"><span>Dexterity</span><span>${numericOrDash(statsToUse.dexterity)}</span></div>
+        <div class="stat-item"><span>Vitality</span><span>${numericOrDash(statsToUse.vitality)}</span></div>
+        <div class="stat-item"><span>Energy</span><span>${numericOrDash(statsToUse.energy)}</span></div>
+        <div class="stat-item"><span>Life / Mana</span><span>${numericOrDash(currentLife)} / ${numericOrDash(currentMana)}</span></div>
+    `;
+    
+    // 3e. Инвентар (Grid)
+    const inventoryGrid = document.getElementById('inventory-grid');
+    inventoryGrid.innerHTML = Array(40).fill(0).map((_,i)=>`<div class="slot"></div>`).join('');
+}
+
+document.addEventListener('DOMContentLoaded', loadCharInfo);

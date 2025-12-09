@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Diablo 2 Console - Realm Stats</title>
+<style>
+/* === GLOBAL === */
+body {
+  font-family: Arial, sans-serif;
+  background: #0f1113;
+  color: #e6eef6;
+  margin: 18px;
+}
+h1 {
+  text-align: center;
+  color: #00baff;
+  font-weight: 700;
+  margin: 0;
+}
+p.sub {
+  text-align: center;
+  color: #9fb5c8;
+  margin: 4px 0 18px 0;
+  font-size: 0.95rem;
+}
+
+/* === HORIZONTAL SERVER CARDS === */
+.summary {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+.card {
+  background:#121416;
+  padding:16px 24px;
+  border-radius:8px;
+  box-shadow:0 0 10px rgba(0,0,0,0.4);
+  text-align:center;
+  min-width:120px;
+}
+.card h2 {
+  margin:0;
+  font-size:1.1rem;
+  color:#79d1ff;
+}
+.card p {
+  margin:4px 0 0 0;
+  font-size:1.1rem;
+  font-weight:bold;
+  color:#fff;
+}
+
+/* === GAME CARDS === */
+.game {
+  border: 2px solid #444;
+  margin: 20px;
+  padding: 10px;
+  background: #2b2b2b;
+  border-radius: 8px;
+}
+.game h2 {
+  margin: 0 0 5px 0;
+}
+
+/* Difficulty colors */
+.normal-game { border-left: 5px solid #00ff00; }
+.nightmare-game { border-left: 5px solid #ff9900; }
+.hell-game { border-left: 5px solid #ff0000; }
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 5px;
+}
+th, td {
+  border: 1px solid #555;
+  padding: 4px;
+  text-align: left;
+}
+th {
+  background-color: #333;
+  color: #ffcc00;
+}
+td {
+  background-color: #222;
+}
+
+/* Character cards */
+.character {
+  margin-top: 10px;
+  border: 1px solid #555;
+  border-radius: 6px;
+  padding: 5px;
+  background-color: #222;
+}
+.character h3 {
+  color: #66ccff;
+  margin: 0;
+}
+.item-stats {
+  margin-top: 5px;
+  font-size: 0.9em;
+  color: #ccc;
+}
+</style>
+</head>
+<body>
+
+<h1>Diablo 2 Realm Statistics</h1>
+<p class="sub">Last updated: <span id="last-updated"></span></p>
+
+<!-- Server Cards -->
+<div id="servers-container" class="summary"></div>
+
+<!-- Games Container -->
+<div id="games-container"></div>
+
+<script>
+// === PATHS ===
+const gamesJSON = '/d2console/all_games.json'; // games with characters
+const serverXML = '/d2console/games.txt';      // server info
+const charsDir = '/d2console/';                // character JSONs
+
+// === FETCH HELPERS ===
+async function fetchJSON(path) {
+  const res = await fetch(path);
+  return await res.json();
+}
+async function fetchXML(path) {
+  const res = await fetch(path);
+  const text = await res.text();
+  return new DOMParser().parseFromString(text, "application/xml");
+}
+async function fetchCharJSON(name) {
+  if (!name) return null;
+  const fileName = name.toLowerCase() + '.json';
+  const path = `${charsDir}${fileName}`;
+  try {
+    const res = await fetch(path);
+    if (!res.ok) return null;
+    return await res.json();
+  } catch(e) {
+    console.warn('Failed to load char JSON:', path);
+    return null;
+  }
+}
+
+// === LOAD SERVERS ===
+async function loadServers() {
+  const xml = await fetchXML(serverXML);
+  const servers = xml.querySelectorAll('server');
+  const container = document.getElementById('servers-container');
+
+  servers.forEach(s => {
+    const card = document.createElement('div');
+    card.classList.add('card');
+    card.innerHTML = `
+      <h2>${s.querySelector('location')?.textContent || '-'}</h2>
+      <p><strong>Users:</strong> ${s.querySelector('users')?.textContent || '0'}</p>
+      <p><strong>Games:</strong> ${s.querySelector('games')?.textContent || '0'}</p>
+      <p><strong>Total:</strong> ${s.querySelector('total_games')?.textContent || '0'}</p>
+      <p><strong>Logins:</strong> ${s.querySelector('logins')?.textContent || '0'}</p>
+      <p><strong>Uptime:</strong> ${s.querySelector('uptime')?.textContent || '0'}s</p>
+    `;
+    container.appendChild(card);
+  });
+
+  // set last updated
+  document.getElementById('last-updated').textContent = new Date().toLocaleString();
+}
+
+// === DIFFICULTY CLASS ===
+function diffClass(diff) {
+  if (!diff) return '';
+  const d = diff.toLowerCase();
+  if (d.includes('normal')) return 'normal-game';
+  if (d.includes('night')) return 'nightmare-game';
+  if (d.includes('hell')) return 'hell-game';
+  return '';
+}
+
+// === LOAD GAMES ===
+async function loadGames() {
+  const data = await fetchJSON(gamesJSON);
+  const container = document.getElementById('games-container');
+
+  for (const game of data) {
+    const g = game.GameInfo;
+    const chars = game.Characters;
+
+    const gameDiv = document.createElement('div');
+    gameDiv.classList.add('game', diffClass(g.Difficult));
+    gameDiv.innerHTML = `
+      <h2>${g.GameName} [ID: ${g.GameID}] - ${g.Difficult}</h2>
+      <table>
+        <tr><th>GameVer</th><td>${g.GameVer || '-'}</td></tr>
+        <tr><th>GameType</th><td>${g.GameType || '-'}</td></tr>
+        <tr><th>IsLadder</th><td>${g.IsLadder || '-'}</td></tr>
+        <tr><th>UserCount</th><td>${g.UserCount || '-'}</td></tr>
+        <tr><th>CreateTime</th><td>${g.CreateTime || '-'}</td></tr>
+        <tr><th>Disable</th><td>${g.Disable || '-'}</td></tr>
+        <tr><th>Creator</th><td>${g.CreatorAcct || '-'} / ${g.CreatorChar || '-'}</td></tr>
+      </table>
+    `;
+
+    for (const c of chars) {
+      const charData = await fetchCharJSON(c.CharName) || {};
+      const info = charData.character_info || {};
+      const items = charData.item_stats || {};
+
+      const charDiv = document.createElement('div');
+      charDiv.classList.add('character');
+      charDiv.innerHTML = `
+        <h3>${info.name || c.CharName} (${info.class || c.Class} - Level ${info.level || c.Level})</h3>
+        <table>
+          <tr><th>AcctName</th><td>${info.account_name || c.AcctName}</td></tr>
+          <tr><th>IP</th><td>${c.IPAddress}</td></tr>
+          <tr><th>EnterTime</th><td>${c.EnterTime}</td></tr>
+        </table>
+        <div class="item-stats">
+          <strong>Items:</strong> Total: ${items.total_items || 0}, Normal: ${items.normal || 0}, Magic: ${items.magic || 0}, Set: ${items.set || 0}, Unique: ${items.unique || 0}, Rare: ${items.rare || 0}, HighQuality: ${items.high_quality || 0}
+        </div>
+      `;
+      gameDiv.appendChild(charDiv);
+    }
+
+    container.appendChild(gameDiv);
+  }
+}
+
+// === INIT ===
+loadServers();
+loadGames();
+</script>
+</body>
+</html>

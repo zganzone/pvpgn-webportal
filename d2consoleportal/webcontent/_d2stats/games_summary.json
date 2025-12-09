@@ -1,0 +1,49 @@
+{
+  "active_games": [
+  {
+    "GameInfo": {
+      "No": "001",
+      "GameName": "Afassaf",
+      "GamePass": null,
+      "ID": "13",
+      "GameVer": "exp",
+      "Type": "sc",
+      "Difficulty": "hell",
+      "Ladder": "ladder",
+      "Users": "1",
+      "CreateTime": "23:20:30",
+      "Dis": "N"
+    }
+  },
+  {
+    "GameInfo": {
+      "No": "002",
+      "GameName": "Afasff32",
+      "GamePass": null,
+      "ID": "12",
+      "GameVer": "exp",
+      "Type": "sc",
+      "Difficulty": "nightmare",
+      "Ladder": "1",
+      "Users": "23:20:21",
+      "CreateTime": "N",
+      "Dis": null
+    }
+  },
+  {
+    "GameInfo": {
+      "No": "003",
+      "GameName": "Fsafsa",
+      "GamePass": null,
+      "ID": "11",
+      "GameVer": "exp",
+      "Type": "sc",
+      "Difficulty": "normal",
+      "Ladder": "ladder",
+      "Users": "1",
+      "CreateTime": "23:20:11",
+      "Dis": "N"
+    }
+  }
+  ]
+}

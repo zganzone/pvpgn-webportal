@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>PvPGN Web Portal</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1c1c1c;
+  color: #f5d083;
+  margin: 0;
+  padding: 0;
+}
+h1 { text-align: center; color: #f5d083; }
+table {
+  border-collapse: collapse;
+  width: 90%;
+  margin: 20px auto;
+  background-color: #2b2b2b;
+  border: 1px solid #f5d083;
+}
+th, td {
+  border: 1px solid #f5d083;
+  padding: 6px 12px;
+  text-align: left;
+}
+th {
+  background-color: #3a2f2f;
+}
+tr:nth-child(even) { background-color: #2e2b2b; }
+tr:hover { background-color: #5a3e1b; color: #fff; font-weight: bold; }
+.details { margin-left: 20px; }
+</style>
+</head>
+<body>
+<h1>PvPGN Web Portal</h1>
+<div id="accounts-container"></div>
+
+<script>
+async function loadData() {
+  const response = await fetch('data/webportal_combined.json');
+  const data = await response.json();
+  return data.accounts || {};
+}
+
+function renderAccounts(accounts) {
+  const container = document.getElementById('accounts-container');
+  container.innerHTML = '';
+
+  for (const [account, accData] of Object.entries(accounts)) {
+    const accountDiv = document.createElement('div');
+    accountDiv.innerHTML = `<h2>Account: ${account}</h2>`;
+    
+    const chars = accData.characters;
+    if (chars) {
+      const table = document.createElement('table');
+      table.innerHTML = `<tr>
+        <th>Character</th>
+        <th>Level</th>
+        <th>Exp</th>
+        <th>Current Game</th>
+        <th>Difficulty</th>
+        <th>Status</th>
+        <th>Items</th>
+        <th>Runes</th>
+        <th>Uniques/Sets</th>
+      </tr>`;
+
+      for (const [charName, charData] of Object.entries(chars)) {
+        const summary = charData.summary || {};
+        const game = charData.current_game || {};
+        const row = document.createElement('tr');
+        row.innerHTML = `
+          <td>${charName}</td>
+          <td>${charData.level || '-'}</td>
+          <td>${charData.experience || '-'}</td>
+          <td>${game.game_name || '-'}</td>
+          <td>${game.difficulty || '-'}</td>
+          <td>${game.status || '-'}</td>
+          <td>${summary.total_items || 0}</td>
+          <td>${summary.total_runes || 0}</td>
+          <td>${summary.total_unique_set || 0}</td>
+        `;
+        table.appendChild(row);
+      }
+      accountDiv.appendChild(table);
+    }
+    container.appendChild(accountDiv);
+  }
+}
+
+loadData().then(accounts => renderAccounts(accounts)).catch(err => {
+  console.error("Failed to load JSON:", err);
+  document.getElementById('accounts-container').innerText = "Failed to load data.";
+});
+</script>
+</body>
+</html>

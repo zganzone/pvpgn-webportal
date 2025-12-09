@@ -1,0 +1,3402 @@
+{
+  "generated": "2025-12-09 12:41:09",
+  "rows": [
+    {
+      "account": "zliazubbb",
+      "charfile": "aaaaaaa",
+      "charname": "aaaaaaa",
+      "unique_set": [
+        [
+          "Andariel's Visage",
+          "unique"
+        ],
+        [
+          "Tarnhelm",
+          "unique"
+        ],
+        [
+          "Jalal's Mane",
+          "unique"
+        ],
+        [
+          "Sazabi's Mental Sheath",
+          "set"
+        ],
+        [
+          "Naj's Puzzler",
+          "set"
+        ],
+        [
+          "Harlequin Crest",
+          "unique"
+        ],
+        [
+          "Cerebus' Bite",
+          "unique"
+        ],
+        [
+          "Naj's Light Plate",
+          "set"
+        ],
+        [
+          "Trang-Oul's Claws",
+          "set"
+        ],
+        [
+          "Immortal King's Forge",
+          "set"
+        ],
+        [
+          "Dracul's Grasp",
+          "unique"
+        ],
+        [
+          "Astreon's Iron Ward",
+          "unique"
+        ],
+        [
+          "Titan's Revenge",
+          "unique"
+        ],
+        [
+          "Ravenlore",
+          "unique"
+        ],
+        [
+          "Stormshield",
+          "unique"
+        ]
+      ],
+      "runes": [],
+      "rings": [],
+      "belts": [],
+      "amulets": [],
+      "charms_small": [],
+      "charms_large": [],
+      "charms_grand": [],
+      "weapons": [
+        "Hand Axe"
+      ],
+      "armors": [
+        "Tarnhelm",
+        "Harlequin Crest",
+        "Naj's Light Plate",
+        "Stormshield"
+      ],
+      "other": [
+        "Lesser Healing Potion",
+        "Lesser Healing Potion",
+        "Lesser Healing Potion",
+        "Lesser Healing Potion",
+        "Andariel's Visage",
+        "Jalal's Mane",
+        "Sazabi's Mental Sheath",
+        "Naj's Puzzler",
+        "Cerebus' Bite",
+        "Trang-Oul's Claws",
+        "Immortal King's Forge",
+        "Dracul's Grasp",
+        "Astreon's Iron Ward",
+        "Titan's Revenge",
+        "Ravenlore",
+        "Buckler"
+      ]
+    },
+    {
+      "account": "zliazubbb",
+      "charfile": "amuletiprusteni",
+      "charname": "amuletiprusteni",
+      "unique_set": [
+        [
+          "The Rising Sun",
+          "unique"
+        ],
+        [
+          "Nature's Peace",
+          "unique"
+        ],
+        [
+          "Nokozan Relic",
+          "unique"
+        ],
+        [
+          "Dwarf Star",
+          "unique"
+        ],
+        [
+          "Angelic Halo",
+          "set"
+        ],
+        [
+          "Angelic Halo",
+          "set"
+        ],
+        [
+          "Angelic Wings",
+          "set"
+        ],
+        [
+          "Angelic Halo",
+          "set"
+        ],
+        [
+          "Dwarf Star",
+          "unique"
+        ],
+        [
+          "Manald Heal",
+          "unique"
+        ],
+        [
+          "Angelic Wings",
+          "set"
+        ],
+        [
+          "Carrion Wind",
+          "unique"
+        ],
+        [
+          "Manald Heal",
+          "unique"
+        ],
+        [
+          "Metalgrid",
+          "unique"
+        ],
+        [
+          "Raven Frost",
+          "unique"
+        ],
+        [
+          "The Eye of Etlich",
+          "unique"
+        ],
+        [
+          "Dwarf Star",
+          "unique"
+        ],
+        [
+          "Wisp Projector",
+          "unique"
+        ],
+        [
+          "The Cat's Eye",
+          "unique"
+        ],
+        [
+          "Angelic Wings",
+          "set"
+        ]
+      ],
+      "runes": [],
+      "rings": [
+        "Shadow Grip",
+        "Grim Finger",
+        "Nature's Peace",
+        "Dwarf Star",
+        "Angelic Halo",
+        "Angelic Halo",
+        "Angelic Halo",
+        "Blood Finger",
+        "Dwarf Star",
+        "Manald Heal",
+        "Carrion Wind",
+        "Manald Heal",
+        "Raven Frost",
+        "Dwarf Star",
+        "Wisp Projector",
+        "Scintillating",
+        "Bitter Band"
+      ],
+      "belts": [],
+      "amulets": [
+        "The Rising Sun",
+        "Volcanic",
+        "Grim Scarab",
+        "Nokozan Relic",
+        "Amulet",
+        "Angelic Wings",
+        "Angelic Wings",
+        "Metalgrid",
+        "Teleportation",
+        "The Eye of Etlich",
+        "The Cat's Eye",
+        "Corruption Heart",
+        "Angelic Wings"
+      ],
+      "charms_small": [],
+      "charms_large": [],
+      "charms_grand": [],
+      "weapons": [],
+      "armors": [
+        "Winged Helm"
+      ],
+      "other": [
+        "Lesser Healing Potion",
+        "Lesser Healing Potion",
+        "Lesser Healing Potion",
+        "Lesser Healing Potion",
+        "Fewer",
+        "Fewer",
+        "Katar",
+        "Buckler"
+      ]
+    },
+    {
+      "account": "zgan",
+      "charfile": "andruid",
+      "charname": "andruid",
+      "unique_set": [
+        [
+          "Snakecord",
+          "unique"
+        ]
+      ],
+      "runes": [],
+      "rings": [
+        "Strength",
+        "Steel"
+      ],
+      "belts": [],
+      "amulets": [],
+      "charms_small": [
+        "Crimson Life",
+        "Strength"
+      ],
+      "charms_large": [],
+      "charms_grand": [],
+      "weapons": [],
+      "armors": [
+        "Hard Leather Armor",
+        "Sturdy Charged Shield"
+      ],
+      "other": [
+        "Town Portal Book",
+        "Identify Book",
+        "Skeleton Key",
+        "Lesser Mana Potion",
+        "Lesser Healing Potion",
+        "Lesser Healing Potion",
+        "Lesser Healing Potion",
+        "Storm Song",
+        "Sturdy",
+        "Sturdy",
+        "Snakecord",
+        "Heavy Boots",
+        "Jagged"
+      ]
+    },
+    {
+      "account": "zgan",
+      "charfile": "barmul",
+      "charname": "barmul",
+      "unique_set": [],
+      "runes": [],
+      "rings": [],
+      "belts": [],
+      "amulets": [],
+      "charms_small": [],
+      "charms_large": [],
+      "charms_grand": [],
+      "weapons": [
+        "Hand Axe"
+      ],
+      "armors": [],
+      "other": [
+        "Lesser Healing Potion",
+        "Lesser Healing Potion",
+        "Lesser Healing Potion",
+        "Lesser Healing Potion",
+        "Sash",
+        "Town Portal Scroll",
+        "Identify Scroll",
+        "Buckler"
+      ]
+    },
+    {
+      "account": "zliazubbb",
+      "charfile": "charmove",
+      "charname": "charmove",
+      "unique_set": [],
+      "runes": [],
+      "rings": [],
+      "belts": [],
+      "amulets": [],
+      "charms_small": [
+        "Vita",
+        "Ruby Strength",
+        "Azure Vita",
+        "Amber",
+        "Amber Greed",
+        "Balance",
+        "Bronze Balance",
+        "Balance",
+        "Emerald Dexterity",
+        "Good Luck",
+        "Vita",
+        "Emerald",
+        "Vita",
+        "Vita",
+        "Stout Balance",
+        "Vita",
+        "Rugged Good Luck",
+        "Coral Strength",
+        "Good Luck",
+        "Emerald",
+        "Good Luck",
+        "Snowflake Good Luck",
+        "Good Luck",
+        "Good Luck",
+        "Balance",
+        "Cobalt",
+        "Good Luck",
+        "Rugged Balance",
+        "Coral",
+        "Vita",
+        "Amber",
+        "Good Luck",
+        "Good Luck",
+        "Russet Dexterity",
+        "Good Luck",
+        "Stalwart Good Luck",
+        "Jade Life"
+      ],
+      "charms_large": [],
+      "charms_grand": [
+        "Expert's",
+        "Acrobat's Dexterity",
+        "Fanatic",
+        "Spiritual",
+        "Emerald Incineration",
+        "Fletcher's Substinence",
+        "Expert's Blight",
+        "Hexing Substinence",
+        "Steel Substinence",
+        "Captain's Substinence",
+        "Fanatic",
+        "Captain's Strength",
+        "Steel Vita"
+      ],
+      "weapons": [],
+      "armors": [],
+      "other": [
+        "Lesser Healing Potion",
+        "Lesser Healing Potion",
+        "Lesser Healing Potion",
+        "Lesser Healing Potion",
+        "Town Portal Scroll",
+        "Identify Scroll",
+        "Wand"
+      ]
+    },
+    {
+      "account": "zliazub",
+      "charfile": "druid",
+      "charname": "druid",
+      "unique_set": [
+        [
+          "Jalal's Mane",
+          "unique"
+        ],
+        [
+          "Laying of Hands",
+          "set"
+        ],
+        [
+          "Hellmouth",
+          "unique"
+        ],
+        [
+          "Aldur's Stony Gaze",
+          "set"
+        ],
+        [
+          "Haemosu's Adament",
+          "set"
+        ],
+        [
+          "Immortal King's Forge",
+          "set"
+        ],
+        [
+          "Jalal's Mane",
+          "unique"
+        ],
+        [
+          "Blackbog's Sharp",
+          "unique"
+        ],
+        [
+          "Baranar's Star",
+          "unique"
+        ],
+        [
+          "Crown of Thieves",
+          "unique"
+        ],
+        [
+          "Rune Master",
+          "unique"
+        ],
+        [
+          "Jalal's Mane",
+          "unique"
+        ],
+        [
+          "Fleshripper",
+          "unique"
+        ],
+        [
+          "Dimoak's Hew",
+          "unique"
+        ]
+      ],
+      "runes": [],
+      "rings": [
+        "Grim Gyre",
+        "Tangerine"
+      ],
+      "belts": [],
+      "amulets": [
+        "Crimson the Mind"
+      ],
+      "charms_small": [],
+      "charms_large": [
+        "Blight",
+        "Azure Strength",
+        "Coral",
+        "Beryl Flame"
+      ],
+      "charms_grand": [],
+      "weapons": [],
+      "armors": [
+        "Leather Boots",
+        "Crown of Thieves"
+      ],
+      "other": [
+        "Identify Book",
+        "Town Portal Book",
+        "Sturdy",
+        "Jalal's Mane",
+        "Laying of Hands",
+        "Strength",
+        "Wolf Head",
+        "Lesser Healing Potion",
+        "Lesser Healing Potion",
+        "Raven Hand",
+        "Lesser Healing Potion",
+        "Lesser Mana Potion",
+        "Light Healing Potion",
+        "Lesser Healing Potion",
+        "Insight",
+        "Hellmouth",
+        "Aldur's Stony Gaze",
+        "Skeleton Key",
+        "Haemosu's Adament",
+        "Immortal King's Forge",
+        "the Leech",
+        "Jalal's Mane",
+        "Blackbog's Sharp",
+        "Baranar's Star",
+        "Wealth",
+        "Rune Master",
+        "Jalal's Mane",
+        "Fleshripper",
+        "Dimoak's Hew"
+      ]
+    },
+    {
+      "account": "zliazubb",
+      "charfile": "gdfgfgfd",
+      "charname": "gdfgfgfd",
+      "unique_set": [
+        [
+          "Soul Drainer",
+          "unique"
+        ],
+        [
+          "Spirit Forge",
+          "unique"
+        ],
+        [
+          "Stealskull",
+          "unique"
+        ],
+        [
+          "Trang-Oul's Wing",
+          "set"
+        ],
+        [
+          "Aldur's Rhythm",
+          "set"
+        ],
+        [
+          "Gimmershred",
+          "unique"
+        ],
+        [
+          "Trang-Oul's Scales",
+          "set"
+        ],
+        [
+          "Skin of the Vipermagi",
+          "unique"
+        ],
+        [
+          "Bartuc's Cut-Throat",
+          "unique"
+        ],
+        [
+          "Sandstorm Trek",
+          "unique"
+        ],
+        [
+          "Dracul's Grasp",
+          "unique"
+        ],
+        [
+          "Dracul's Grasp",
+          "unique"
+        ],
+        [
+          "The Scalper",
+          "unique"
+        ],
+        [
+          "Demon Limb",
+          "unique"
+        ],
+        [
+          "Corpsemourn",
+          "unique"
+        ],
+        [
+          "Moser's Blessed Circle",
+          "unique"
+        ],
+        [
+          "Suicide Branch",
+          "unique"
+        ]
+      ],
+      "runes": [],
+      "rings": [],
+      "belts": [],
+      "amulets": [],
+      "charms_small": [],
+      "charms_large": [],
+      "charms_grand": [],
+      "weapons": [],
+      "armors": [],
+      "other": [
+        "Lesser Healing Potion",
+        "Lesser Healing Potion",
+        "Lesser Healing Potion",
+        "Lesser Healing Potion",
+        "Soul Drainer",
+        "Spirit Forge",
+        "Stealskull",
+        "Trang-Oul's Wing",
+        "Aldur's Rhythm",
+        "Gimmershred",
+        "Trang-Oul's Scales",
+        "Skin of the Vipermagi",
+        "Bartuc's Cut-Throat",
+        "Brimstone Circlet",
+        "Sandstorm Trek",
+        "Dracul's Grasp",
+        "Flail",
+        "Dracul's Grasp",
+        "The Scalper",
+        "Demon Limb",
+        "Corpsemourn",
+        "Moser's Blessed Circle",
+        "Suicide Branch",
+        "Wand"
+      ]
+    },
+    {
+      "account": "zliazubb",
+      "charfile": "gfgfdgfd",
+      "charname": "gfgfdgfd",
+      "unique_set": [
+        [
+          "Vampire Gaze",
+          "unique"
+        ],
+        [
+          "Arm of King Leoric",
+          "unique"
+        ],
+        [
+          "Gravenspine",
+          "unique"
+        ],
+        [
+          "Aldur's Rhythm",
+          "set"
+        ],
+        [
+          "Plague Bearer",
+          "unique"
+        ],
+        [
+          "Trang-Oul's Scales",
+          "set"
+        ],
+        [
+          "Ume's Lament",
+          "unique"
+        ],
+        [
+          "Trang-Oul's Guise",
+          "set"
+        ],
+        [
+          "Flamebellow",
+          "unique"
+        ],
+        [
+          "Griswold's Valor",
+          "set"
+        ],
+        [
+          "Deathbit",
+          "unique"
+        ]
+      ],
+      "runes": [],
+      "rings": [],
+      "belts": [],
+      "amulets": [],
+      "charms_small": [],
+      "charms_large": [],
+      "charms_grand": [],
+      "weapons": [
+        "Short Staff"
+      ],
+      "armors": [],
+      "other": [
+        "Lesser Healing Potion",
+        "Lesser Healing Potion",
+        "Lesser Healing Potion",
+        "Lesser Healing Potion",
+        "Vampire Gaze",
+        "Arm of King Leoric",
+        "Gravenspine",
+        "Aldur's Rhythm",
+        "Plague Bearer",
+        "Trang-Oul's Scales",
+        "Ume's Lament",
+        "Trang-Oul's Guise",
+        "Flamebellow",
+        "Stone Greave",
+        "Griswold's Valor",
+        "Deathbit"
+      ]
+    },
+    {
+      "account": "zliazubb",
+      "charfile": "gfhfghfghfghf",
+      "charname": "gfhfghfghfghf",
+      "unique_set": [],
+      "runes": [],
+      "rings": [],
+      "belts": [],
+      "amulets": [],
+      "charms_small": [
+        "Steel Vita",
+        "Vita",
+        "Vita",
+        "Crimson Balance",
+        "Toxic",
+        "Coral",
+        "Coral Strength",
+        "Coral Substinence",
+        "Balance",
+        "Cobalt",
+        "Snake's Balance",
+        "Iron Vita",
+        "Lizard's Good Luck",
+        "Vita",
+        "Beryl",
+        "Cobalt",
+        "Balance",
+        "Russet",
+        "Bronze Fortune",
+        "Viridian",
+        "Sapphire",
+        "Cobalt",
+        "Russet Shock",
+        "Sapphire Pestilence",
+        "Vita",
+        "Lapis Strength",
+        "Russet Substinence",
+        "Balance",
+        "Balance",
+        "Stout Balance",
+        "Toxic",
+        "Azure Fortune",
+        "Steel Fortune",
+        "Vita",
+        "Good Luck",
+        "Amber"
+      ],
+      "charms_large": [
+        "Sapphire",
+        "Pestilent Quality"
+      ],
+      "charms_grand": [
+        "Hexing Inertia",
+        "Nature's Balance",
+        "Trainer's",
+        "Spiritual Dexterity",
+        "Fletcher's Strength",
+        "Graverobber's Dexterity",
+        "Fletcher's Life",
+        "Hexing Dexterity",
+        "Fletcher's Greed",
+        "Mentalist's Winter",
+        "Shogukusha's",
+        "Amber Greed",
+        "Acrobat's",
+        "Burning",
+        "Nature's",
+        "Fletcher's"
+      ],
+      "weapons": [],
+      "armors": [],
+      "other": [
+        "Lesser Healing Potion",
+        "Lesser Healing Potion",
+        "Lesser Healing Potion",
+        "Lesser Healing Potion",
+        "Wand"
+      ]
+    },
+    {
+      "account": "zliazubb",
+      "charfile": "grobar",
+      "charname": "grobar",
+      "unique_set": [
+        [
+          "Griswold's Heart",
+          "set"
+        ],
+        [
+          "Spectral Shard",
+          "unique"
+        ],
+        [
+          "Stealskull",
+          "unique"
+        ],
+        [
+          "Skin of the Vipermagi",
+          "unique"
+        ],
+        [
+          "The Reaper's Toll",
+          "unique"
+        ],
+        [
+          "Demonhorn's Edge",
+          "unique"
+        ],
+        [
+          "Arreat's Face",
+          "unique"
+        ],
+        [
+          "Eschuta's Temper",
+          "unique"
+        ],
+        [
+          "Natalya's Totem",
+          "set"
+        ],
+        [
+          "Vidala's Snare",
+          "set"
+        ]
+      ],
+      "runes": [],
+      "rings": [],
+      "belts": [],
+      "amulets": [
+        "Vidala's Snare"
+      ],
+      "charms_small": [],
+      "charms_large": [],
+      "charms_grand": [],
+      "weapons": [
+        "Colossal Sword"
+      ],
+      "armors": [
+        "Leather Armor",
+        "Diamond Mail"
+      ],
+      "other": [
+        "Lesser Healing Potion",
+        "Lesser Healing Potion",
+        "Sash",
+        "Lesser Healing Potion",
+        "Cap",
+        "Lesser Healing Potion",
+        "Light Mana Potion",
+        "Lesser Healing Potion",
+        "Lesser Healing Potion",
+        "Lesser Mana Potion",
+        "Flail",
+        "Troll Nest",
+        "Griswold's Heart",
+        "Spectral Shard",
+        "Stealskull",
+        "Skin of the Vipermagi",
+        "The Reaper's Toll",
+        "Demonhorn's Edge",
+        "Arreat's Face",
+        "Eschuta's Temper",
+        "Natalya's Totem",
+        "Wand"
+      ]
+    },
+    {
+      "account": "zliazubbbb",
+      "charfile": "itemi",
+      "charname": "itemi",
+      "unique_set": [
+        [
+          "Skin of the Vipermagi",
+          "unique"
+        ],
+        [
+          "Hellslayer",
+          "unique"
+        ],
+        [
+          "Guardian Angel",
+          "unique"
+        ],
+        [
+          "Spirit Keeper",
+          "unique"
+        ],
+        [
+          "Homunculus",
+          "unique"
+        ],
+        [
+          "Wizardspike",
+          "unique"
+        ],
+        [
+          "Guillaume's Face",
+          "set"
+        ],
+        [
+          "Lightsabre",
+          "unique"
+        ],
+        [
+          "Crown of Thieves",
+          "unique"
+        ],
+        [
+          "Gimmershred",
+          "unique"
+        ]
+      ],
+      "runes": [],
+      "rings": [],
+      "belts": [],
+      "amulets": [],
+      "charms_small": [],
+      "charms_large": [],
+      "charms_grand": [
+        "Fungal",
+        "Steel Substinence"
+      ],
+      "weapons": [],
+      "armors": [
+        "Crown of Thieves"
+      ],
+      "other": [
+        "Lesser Healing Potion",
+        "Lesser Healing Potion",
+        "Lesser Healing Potion",
+        "Lesser Healing Potion",
+        "Town Portal Scroll",
+        "Identify Scroll",
+        "Skin of the Vipermagi",
+        "Hellslayer",
+        "Guardian Angel",
+        "Spirit Keeper",
+        "Homunculus",
+        "Wizardspike",
+        "Guillaume's Face",
+        "Lightsabre",
+        "Gimmershred",
+        "Charged Essence of Hatred",
+        "War Scepter",
+        "Club",
+        "Buckler"
+      ]
+    },
+    {
+      "account": "zliazubbbb",
+      "charfile": "jultiitemi",
+      "charname": "jultiitemi",
+      "unique_set": [],
+      "runes": [],
+      "rings": [],
+      "belts": [],
+      "amulets": [],
+      "charms_small": [],
+      "charms_large": [],
+      "charms_grand": [],
+      "weapons": [
+        "Short Staff"
+      ],
+      "armors": [],
+      "other": [
+        "Lesser Healing Potion",
+        "Lesser Healing Potion",
+        "Lesser Healing Potion",
+        "Lesser Healing Potion",
+        "Town Portal Scroll",
+        "Identify Scroll",
+        "Gale Greave",
+        "Viper Hold",
+        "Spirit Casque",
+        "Bone Tread",
+        "Fiendra Nails"
+      ]
+    },
+    {
+      "account": "zliazub",
+      "charfile": "kamui",
+      "charname": "kamui",
+      "unique_set": [
+        [
+          "Rainbow Facet",
+          "unique"
+        ],
+        [
+          "Rainbow Facet",
+          "unique"
+        ]
+      ],
+      "runes": [],
+      "rings": [
+        "Twisted Essence of Suffering",
+        "Festering Essence of Destruction",
+        "Festering Essence of Destruction",
+        "Festering Essence of Destruction",
+        "Festering Essence of Destruction"
+      ],
+      "belts": [],
+      "amulets": [],
+      "charms_small": [],
+      "charms_large": [],
+      "charms_grand": [],
+      "weapons": [],
+      "armors": [],
+      "other": [
+        "Lesser Healing Potion",
+        "Lesser Healing Potion",
+        "Lesser Healing Potion",
+        "Lesser Healing Potion",
+        "Perfect Skull",
+        "Perfect Topaz",
+        "Ruby",
+        "Realgar Thunder",
+        "Ruby",
+        "Rainbow Facet",
+        "Perfect Topaz",
+        "Ruby",
+        "Freedom",
+        "Ruby Virility",
+        "Ruby Virility",
+        "Rainbow Facet",
+        "Perfect Topaz",
+        "Perfect Amethyst",
+        "Perfect Amethyst",
+        "Perfect Amethyst",
+        "Perfect Amethyst",
+        "Perfect Amethyst",
+        "Perfect Amethyst",
+        "Perfect Amethyst",
+        "Perfect Amethyst",
+        "Perfect Amethyst",
+        "Perfect Amethyst",
+        "Blood Eye",
+        "Perfect Diamond",
+        "Ral Rune",
+        "Perfect Topaz",
+        "Ral Rune",
+        "Ral Rune",
+        "Perfect Amethyst",
+        "Perfect Amethyst",
+        "Perfect Amethyst",
+        "Perfect Amethyst",
+        "Perfect Amethyst",
+        "Perfect Amethyst",
+        "Perfect Amethyst",
+        "Perfect Amethyst",
+        "Ral Rune",
+        "Ral Rune",
+        "Perfect Topaz",
+        "Fewer",
+        "Perfect Diamond",
+        "Perfect Amethyst",
+        "Perfect Diamond",
+        "Ral Rune",
+        "Fewer",
+        "Bitter Talisman",
+        "Ruby Fewer",
+        "Perfect Diamond",
+        "Perfect Topaz",
+        "Perfect Skull",
+        "Perfect Ruby",
+        "Ral Rune",
+        "Perfect Diamond",
+        "Perfect Diamond",
+        "Perfect Diamond",
+        "Bone Fewer",
+        "Perfect Topaz",
+        "Charged Essence of Hatred",
+        "Burning Essence of Terror",
+        "Realgar",
+        "Ral Rune",
+        "Burning Essence of Terror",
+        "Perfect Amethyst",
+        "Perfect Sapphire",
+        "Perfect Ruby",
+        "Perfect Topaz",
+        "Perfect Emerald",
+        "Javelin",
+        "Buckler"
+      ]
+    },
+    {
+      "account": "zliazubbb",
+      "charfile": "kluchove",
+      "charname": "kluchove",
+      "unique_set": [],
+      "runes": [],
+      "rings": [],
+      "belts": [],
+      "amulets": [],
+      "charms_small": [],
+      "charms_large": [],
+      "charms_grand": [],
+      "weapons": [],
+      "armors": [],
+      "other": [
+        "Lesser Healing Potion",
+        "Lesser Healing Potion",
+        "Lesser Healing Potion",
+        "Lesser Healing Potion",
+        "Town Portal Scroll",
+        "Identify Scroll",
+        "Key of Destruction",
+        "Key of Hate",
+        "Key of Hate",
+        "Key of Hate",
+        "Key of Terror",
+        "Key of Terror",
+        "Key of Terror",
+        "Key of Terror",
+        "Key of Hate",
+        "Key of Destruction",
+        "Key of Hate",
+        "Key of Hate",
+        "Key of Hate",
+        "Key of Hate",
+        "Katar",
+        "Buckler"
+      ]
+    },
+    {
+      "account": "zliazubbb",
+      "charfile": "kolani",
+      "charname": "kolani",
+      "unique_set": [
+        [
+          "Arachnid Mesh",
+          "unique"
+        ],
+        [
+          "Credendum",
+          "set"
+        ],
+        [
+          "String of Ears",
+          "unique"
+        ],
+        [
+          "Credendum",
+          "set"
+        ],
+        [
+          "Gloom's Trap",
+          "unique"
+        ],
+        [
+          "Nightsmoke",
+          "unique"
+        ],
+        [
+          "Waterwalk",
+          "unique"
+        ],
+        [
+          "Wilhelm's Pride",
+          "set"
+        ],
+        [
+          "Credendum",
+          "set"
+        ],
+        [
+          "Snowclash",
+          "unique"
+        ],
+        [
+          "String of Ears",
+          "unique"
+        ],
+        [
+          "Wilhelm's Pride",
+          "set"
+        ],
+        [
+          "Goldwrap",
+          "unique"
+        ],
+        [
+          "String of Ears",
+          "unique"
+        ],
+        [
+          "Snowclash",
+          "unique"
+        ],
+        [
+          "Credendum",
+          "set"
+        ],
+        [
+          "Immortal King's Pillar",
+          "set"
+        ],
+        [
+          "Immortal King's Detail",
+          "set"
+        ],
+        [
+          "Verdungo's Hearty Cord",
+          "unique"
+        ],
+        [
+          "Verdungo's Hearty Cord",
+          "unique"
+        ],
+        [
+          "Nosferatu's Coil",
+          "unique"
+        ]
+      ],
+      "runes": [],
+      "rings": [
+        "String of Ears",
+        "String of Ears",
+        "String of Ears"
+      ],
+      "belts": [],
+      "amulets": [],
+      "charms_small": [],
+      "charms_large": [],
+      "charms_grand": [],
+      "weapons": [
+        "Hand Axe"
+      ],
+      "armors": [
+        "Wilhelm's Pride",
+        "Wilhelm's Pride"
+      ],
+      "other": [
+        "Lesser Healing Potion",
+        "Lesser Healing Potion",
+        "Lesser Healing Potion",
+        "Lesser Healing Potion",
+        "Town Portal Scroll",
+        "Identify Scroll",
+        "Arachnid Mesh",
+        "Credendum",
+        "Credendum",
+        "Gloom's Trap",
+        "Nightsmoke",
+        "Waterwalk",
+        "Credendum",
+        "Snowclash",
+        "Goldwrap",
+        "Snowclash",
+        "Credendum",
+        "Immortal King's Pillar",
+        "Carrion Strap",
+        "Immortal King's Detail",
+        "Verdungo's Hearty Cord",
+        "Verdungo's Hearty Cord",
+        "Eagle Lash",
+        "Nosferatu's Coil",
+        "Buckler"
+      ]
+    },
+    {
+      "account": "zliazub",
+      "charfile": "lightsorc",
+      "charname": "lightsorc",
+      "unique_set": [
+        [
+          "Gull",
+          "unique"
+        ],
+        [
+          "The Stone of Jordan",
+          "unique"
+        ],
+        [
+          "Gheed's Fortune",
+          "unique"
+        ],
+        [
+          "Nagelring",
+          "unique"
+        ],
+        [
+          "Tal Rasha's Fine-Spun Cloth",
+          "set"
+        ],
+        [
+          "Annihilus",
+          "unique"
+        ],
+        [
+          "Tal Rasha's Adjudication",
+          "set"
+        ],
+        [
+          "Tal Rasha's Guardianship",
+          "set"
+        ],
+        [
+          "Harlequin Crest",
+          "unique"
+        ],
+        [
+          "Tal Rasha's Horadric Crest",
+          "set"
+        ],
+        [
+          "Tal Rasha's Lidless Eye",
+          "set"
+        ],
+        [
+          "Saracen's Chance",
+          "unique"
+        ],
+        [
+          "Immortal King's Pillar",
+          "set"
+        ],
+        [
+          "Infernostride",
+          "unique"
+        ],
+        [
+          "The Oculus",
+          "unique"
+        ]
+      ],
+      "runes": [],
+      "rings": [
+        "The Stone of Jordan",
+        "Nagelring",
+        "Ocher Fortune",
+        "Grim Loop"
+      ],
+      "belts": [],
+      "amulets": [
+        "the Titan",
+        "Tal Rasha's Adjudication",
+        "Saracen's Chance"
+      ],
+      "charms_small": [
+        "Steel Good Luck",
+        "Shimmering",
+        "Jade Vita",
+        "Shimmering Vita",
+        "Good Luck",
+        "Shimmering",
+        "Annihilus",
+        "Amber Good Luck",
+        "Azure Good Luck",
+        "Ruby Balance",
+        "Emerald Vita",
+        "Shimmering",
+        "Jade Inertia"
+      ],
+      "charms_large": [],
+      "charms_grand": [
+        "Gheed's Fortune",
+        "Sparking Life",
+        "Sparking the Icicle",
+        "Sparking"
+      ],
+      "weapons": [],
+      "armors": [
+        "Harlequin Crest"
+      ],
+      "other": [
+        "Identify Book",
+        "Sur Rune",
+        "Ohm Rune",
+        "Lo Rune",
+        "Ohm Rune",
+        "Gul Rune",
+        "Gul Rune",
+        "Gull",
+        "Um Rune",
+        "Key of Hate",
+        "Sur Rune",
+        "Pul Rune",
+        "Tal Rasha's Fine-Spun Cloth",
+        "Imp Grasp",
+        "Town Portal Book",
+        "Key of Hate",
+        "Ruby Ire",
+        "Tal Rasha's Guardianship",
+        "Horadric Cube",
+        "Tal Rasha's Horadric Crest",
+        "Ruby the Glacier",
+        "Tal Rasha's Lidless Eye",
+        "Splendor",
+        "Lum Rune",
+        "Greater Mana Potion",
+        "Greater Mana Potion",
+        "Greater Mana Potion",
+        "Greater Mana Potion",
+        "Thul Rune",
+        "Immortal King's Pillar",
+        "Greater Mana Potion",
+        "Greater Healing Potion",
+        "Greater Healing Potion",
+        "Greater Healing Potion",
+        "Greater Healing Potion",
+        "Greater Healing Potion",
+        "Greater Healing Potion",
+        "Greater Healing Potion",
+        "Greater Healing Potion",
+        "Greater Mana Potion",
+        "Greater Mana Potion",
+        "Greater Mana Potion",
+        "Infernostride",
+        "The Oculus",
+        "Spirit"
+      ]
+    },
+    {
+      "account": "zliazub",
+      "charfile": "necromecro",
+      "charname": "necromecro",
+      "unique_set": [
+        [
+          "Wihtstan's Guard",
+          "set"
+        ],
+        [
+          "Gimmershred",
+          "unique"
+        ],
+        [
+          "Bul-Katho's Tribal Guardian",
+          "set"
+        ],
+        [
+          "Tal Rasha's Lidless Eye",
+          "set"
+        ],
+        [
+          "Rite of Passage",
+          "set"
+        ],
+        [
+          "Harlequin Crest",
+          "unique"
+        ]
+      ],
+      "runes": [],
+      "rings": [],
+      "belts": [],
+      "amulets": [],
+      "charms_small": [],
+      "charms_large": [],
+      "charms_grand": [],
+      "weapons": [],
+      "armors": [
+        "Diamond Mail",
+        "Ornate Plate",
+        "Harlequin Crest"
+      ],
+      "other": [
+        "Lesser Healing Potion",
+        "Lesser Healing Potion",
+        "Lesser Healing Potion",
+        "Lesser Healing Potion",
+        "Town Portal Scroll",
+        "Identify Scroll",
+        "Ist Rune",
+        "Lum Rune",
+        "Ohm Rune",
+        "Lum Rune",
+        "Ko Rune",
+        "Ist Rune",
+        "Pul Rune",
+        "Lem Rune",
+        "Mal Rune",
+        "Fal Rune",
+        "Ko Rune",
+        "Dol Rune",
+        "Fal Rune",
+        "Hel Rune",
+        "Lum Rune",
+        "Wire Fleece",
+        "Io Rune",
+        "Dusk Shroud",
+        "Wihtstan's Guard",
+        "Gimmershred",
+        "Bul-Katho's Tribal Guardian",
+        "Tal Rasha's Lidless Eye",
+        "Rite of Passage",
+        "Wand"
+      ]
+    },
+    {
+      "account": "zliazub",
+      "charfile": "paladin",
+      "charname": "paladin",
+      "unique_set": [
+        [
+          "Annihilus",
+          "unique"
+        ],
+        [
+          "Gore Rider",
+          "unique"
+        ],
+        [
+          "Heaven's Light",
+          "unique"
+        ],
+        [
+          "Guillaume's Face",
+          "set"
+        ],
+        [
+          "Gheed's Fortune",
+          "unique"
+        ],
+        [
+          "Harlequin Crest",
+          "unique"
+        ],
+        [
+          "Mara's Kaleidoscope",
+          "unique"
+        ],
+        [
+          "Nagelring",
+          "unique"
+        ],
+        [
+          "Arachnid Mesh",
+          "unique"
+        ],
+        [
+          "War Traveler",
+          "unique"
+        ],
+        [
+          "Trang-Oul's Claws",
+          "set"
+        ],
+        [
+          "Trang-Oul's Claws",
+          "set"
+        ],
+        [
+          "Herald Of Zakarum",
+          "unique"
+        ]
+      ],
+      "runes": [],
+      "rings": [
+        "Chaos Band",
+        "Doom Hold",
+        "Nagelring"
+      ],
+      "belts": [],
+      "amulets": [
+        "Rose Branded",
+        "Mara's Kaleidoscope"
+      ],
+      "charms_small": [
+        "Azure Dexterity",
+        "Emerald",
+        "Annihilus",
+        "Amber",
+        "Viridian Vita",
+        "Coral Storms",
+        "Ruby",
+        "Good Luck"
+      ],
+      "charms_large": [
+        "Cobalt",
+        "Jade"
+      ],
+      "charms_grand": [
+        "Cobalt",
+        "Lion Branded Maiming",
+        "Lion Branded",
+        "Gheed's Fortune"
+      ],
+      "weapons": [],
+      "armors": [
+        "Harlequin Crest"
+      ],
+      "other": [
+        "Gul Rune",
+        "Ohm Rune",
+        "Life Tap",
+        "Gore Rider",
+        "Heaven's Light",
+        "Guillaume's Face",
+        "Mal Rune",
+        "Lem Rune",
+        "Horadric Cube",
+        "Loath Cord",
+        "Pul Rune",
+        "Fal Rune",
+        "Skeleton Key",
+        "Town Portal Book",
+        "Arachnid Mesh",
+        "War Traveler",
+        "Trang-Oul's Claws",
+        "Enigma",
+        "Exile",
+        "Flawless Amethyst",
+        "El Rune",
+        "Eld Rune",
+        "Identify Book",
+        "Trang-Oul's Claws",
+        "Greater Healing Potion",
+        "Greater Mana Potion",
+        "Greater Mana Potion",
+        "Greater Mana Potion",
+        "Greater Mana Potion",
+        "Strong Healing Potion",
+        "Strong Healing Potion",
+        "Strong Healing Potion",
+        "Greater Healing Potion",
+        "Greater Healing Potion",
+        "Strong Healing Potion",
+        "Strong Mana Potion",
+        "Strong Mana Potion",
+        "Strong Mana Potion",
+        "Call to Arms",
+        "Spirit",
+        "Plague Prod",
+        "Heart of the Oak",
+        "Herald Of Zakarum"
+      ]
+    },
+    {
+      "account": "zgan2",
+      "charfile": "palqk",
+      "charname": "palqk",
+      "unique_set": [
+        [
+          "Civerb's Icon",
+          "set"
+        ],
+        [
+          "Bloodthief",
+          "unique"
+        ],
+        [
+          "Ginther's Rift",
+          "unique"
+        ],
+        [
+          "Angelic Halo",
+          "set"
+        ],
+        [
+          "Hexfire",
+          "unique"
+        ],
+        [
+          "Frostburn",
+          "unique"
+        ],
+        [
+          "Umbral Disk",
+          "unique"
+        ],
+        [
+          "Skin of the Flayed One",
+          "unique"
+        ],
+        [
+          "Bverrit Keep",
+          "unique"
+        ],
+        [
+          "Spectral Shard",
+          "unique"
+        ],
+        [
+          "Magefist",
+          "unique"
+        ],
+        [
+          "Bloodfist",
+          "unique"
+        ],
+        [
+          "Sparking Mail",
+          "unique"
+        ]
+      ],
+      "runes": [],
+      "rings": [
+        "Beast Grip",
+        "Angelic Halo",
+        "Dread Spiral"
+      ],
+      "belts": [],
+      "amulets": [
+        "Civerb's Icon",
+        "Bronze"
+      ],
+      "charms_small": [
+        "Rugged Life",
+        "Rugged Good Luck",
+        "Strength"
+      ],
+      "charms_large": [
+        "Strength",
+        "Rugged Greed",
+        "Lizard's Life"
+      ],
+      "charms_grand": [
+        "Life",
+        "Life"
+      ],
+      "weapons": [],
+      "armors": [
+        "Breast Plate",
+        "Sparking Mail"
+      ],
+      "other": [
+        "Town Portal Book",
+        "Horadric Cube",
+        "Mephisto Soul Stone",
+        "Bloodthief",
+        "Ginther's Rift",
+        "Havoc Cowl",
+        "Stealth",
+        "Dread Clasp",
+        "Storm Blazer",
+        "Strong Mana Potion",
+        "Greater Mana Potion",
+        "Strong Mana Potion",
+        "Identify Book",
+        "Strong Mana Potion",
+        "Greater Mana Potion",
+        "Grand Scepter",
+        "Hexfire",
+        "Frostburn",
+        "Steel",
+        "Umbral Disk",
+        "Strong Healing Potion",
+        "Strong Healing Potion",
+        "Strong Healing Potion",
+        "Strong Healing Potion",
+        "Skin of the Flayed One",
+        "Bverrit Keep",
+        "Spectral Shard",
+        "Magefist",
+        "Bloodfist",
+        "War Scepter",
+        "Gale Wing"
+      ]
+    },
+    {
+      "account": "zgan3",
+      "charfile": "ringsone",
+      "charname": "ringsone",
+      "unique_set": [
+        [
+          "The Mahim-Oak Curio",
+          "unique"
+        ],
+        [
+          "Raven Frost",
+          "unique"
+        ],
+        [
+          "Manald Heal",
+          "unique"
+        ],
+        [
+          "The Mahim-Oak Curio",
+          "unique"
+        ],
+        [
+          "Manald Heal",
+          "unique"
+        ],
+        [
+          "Nagelring",
+          "unique"
+        ],
+        [
+          "The Eye of Etlich",
+          "unique"
+        ]
+      ],
+      "runes": [],
+      "rings": [
+        "Corruption Band",
+        "Scintillating",
+        "Raven Frost",
+        "Manald Heal",
+        "Fortune",
+        "Manald Heal",
+        "Nagelring"
+      ],
+      "belts": [],
+      "amulets": [
+        "Rainbow",
+        "Angel's",
+        "The Mahim-Oak Curio",
+        "The Mahim-Oak Curio",
+        "The Eye of Etlich",
+        "Amulet"
+      ],
+      "charms_small": [],
+      "charms_large": [],
+      "charms_grand": [],
+      "weapons": [
+        "Short Staff"
+      ],
+      "armors": [],
+      "other": [
+        "Lesser Healing Potion",
+        "Lesser Healing Potion",
+        "Lesser Healing Potion",
+        "Lesser Healing Potion",
+        "Town Portal Scroll",
+        "Identify Scroll"
+      ]
+    },
+    {
+      "account": "zliazubbb",
+      "charfile": "runidobri",
+      "charname": "runidobri",
+      "unique_set": [],
+      "runes": [],
+      "rings": [],
+      "belts": [],
+      "amulets": [],
+      "charms_small": [],
+      "charms_large": [],
+      "charms_grand": [],
+      "weapons": [],
+      "armors": [],
+      "other": [
+        "Lesser Healing Potion",
+        "Lesser Healing Potion",
+        "Lesser Healing Potion",
+        "Lesser Healing Potion",
+        "Town Portal Scroll",
+        "Identify Scroll",
+        "Ko Rune",
+        "Lum Rune",
+        "Lum Rune",
+        "Ko Rune",
+        "Lum Rune",
+        "Lum Rune",
+        "Lum Rune",
+        "Ko Rune",
+        "Lum Rune",
+        "Lum Rune",
+        "Lum Rune",
+        "Lum Rune",
+        "Ko Rune",
+        "Ko Rune",
+        "Um Rune",
+        "Lem Rune",
+        "Lem Rune",
+        "Lem Rune",
+        "Um Rune",
+        "Um Rune",
+        "Ko Rune",
+        "Pul Rune",
+        "Pul Rune",
+        "Pul Rune",
+        "Um Rune",
+        "Lem Rune",
+        "Fal Rune",
+        "Fal Rune",
+        "Fal Rune",
+        "Fal Rune",
+        "Pul Rune",
+        "Fal Rune",
+        "Fal Rune",
+        "Um Rune",
+        "Pul Rune",
+        "Pul Rune",
+        "Lem Rune",
+        "Fal Rune",
+        "Fal Rune",
+        "Lem Rune",
+        "Pul Rune",
+        "Pul Rune",
+        "Lum Rune",
+        "Wand"
+      ]
+    },
+    {
+      "account": "zgan3",
+      "charfile": "runione",
+      "charname": "runione",
+      "unique_set": [],
+      "runes": [],
+      "rings": [],
+      "belts": [],
+      "amulets": [],
+      "charms_small": [],
+      "charms_large": [],
+      "charms_grand": [],
+      "weapons": [],
+      "armors": [],
+      "other": [
+        "Lesser Healing Potion",
+        "Lesser Healing Potion",
+        "Lesser Healing Potion",
+        "Lesser Healing Potion",
+        "Town Portal Scroll",
+        "Identify Scroll",
+        "Lum Rune",
+        "Lum Rune",
+        "Io Rune",
+        "Ort Rune",
+        "Ko Rune",
+        "Ko Rune",
+        "Dol Rune",
+        "Dol Rune",
+        "Ith Rune",
+        "Um Rune",
+        "Hel Rune",
+        "Nef Rune",
+        "Amn Rune",
+        "Amn Rune",
+        "Eld Rune",
+        "Ral Rune",
+        "Hel Rune",
+        "Eth Rune",
+        "El Rune",
+        "Ort Rune",
+        "Eth Rune",
+        "Nef Rune",
+        "Ral Rune",
+        "Eld Rune",
+        "Io Rune",
+        "Shael Rune",
+        "Pul Rune",
+        "Ith Rune",
+        "Club",
+        "Buckler"
+      ]
+    },
+    {
+      "account": "zgan3",
+      "charfile": "runitwo",
+      "charname": "runitwo",
+      "unique_set": [],
+      "runes": [],
+      "rings": [],
+      "belts": [],
+      "amulets": [],
+      "charms_small": [],
+      "charms_large": [],
+      "charms_grand": [],
+      "weapons": [],
+      "armors": [],
+      "other": [
+        "Lesser Healing Potion",
+        "Lesser Healing Potion",
+        "Lesser Healing Potion",
+        "Lesser Healing Potion",
+        "Town Portal Scroll",
+        "Identify Scroll",
+        "Eld Rune",
+        "Hel Rune",
+        "Dol Rune",
+        "Amn Rune",
+        "Amn Rune",
+        "Ort Rune",
+        "Ort Rune",
+        "Ral Rune",
+        "Amn Rune",
+        "Ral Rune",
+        "Thul Rune",
+        "Tal Rune",
+        "Sol Rune",
+        "Sol Rune",
+        "Sol Rune",
+        "Thul Rune",
+        "Thul Rune",
+        "Ort Rune",
+        "Tal Rune",
+        "Tal Rune",
+        "Ko Rune",
+        "Thul Rune",
+        "Club",
+        "Buckler"
+      ]
+    },
+    {
+      "account": "zliazub",
+      "charfile": "sdfgdfgsdfgds",
+      "charname": "sdfgdfgsdfgds",
+      "unique_set": [
+        [
+          "Stormshield",
+          "unique"
+        ],
+        [
+          "Taebaek's Glory",
+          "set"
+        ],
+        [
+          "Naj's Light Plate",
+          "set"
+        ],
+        [
+          "Goblin Toe",
+          "unique"
+        ],
+        [
+          "Trang-Oul's Wing",
+          "set"
+        ]
+      ],
+      "runes": [],
+      "rings": [],
+      "belts": [],
+      "amulets": [],
+      "charms_small": [],
+      "charms_large": [],
+      "charms_grand": [],
+      "weapons": [
+        "Cryptic Axe"
+      ],
+      "armors": [
+        "Stormshield",
+        "Naj's Light Plate"
+      ],
+      "other": [
+        "Lesser Healing Potion",
+        "Lesser Healing Potion",
+        "Lesser Healing Potion",
+        "Lesser Healing Potion",
+        "Taebaek's Glory",
+        "Doom Hold",
+        "Scarab Husk",
+        "Ancient's Pledge",
+        "Dimensional Blade",
+        "Peace",
+        "Balrog Blade",
+        "Goblin Toe",
+        "Trang-Oul's Wing",
+        "Legendary Mallet",
+        "Plague Whorl",
+        "Town Portal Scroll",
+        "Identify Scroll",
+        "Sacred Rondache",
+        "Wand"
+      ]
+    },
+    {
+      "account": "zgan3",
+      "charfile": "setisone",
+      "charname": "setisone",
+      "unique_set": [
+        [
+          "Sigon's Shelter",
+          "set"
+        ],
+        [
+          "Sigon's Guard",
+          "set"
+        ],
+        [
+          "Cathan's Seal",
+          "set"
+        ],
+        [
+          "Sigon's Wrap",
+          "set"
+        ],
+        [
+          "Sigon's Sabot",
+          "set"
+        ],
+        [
+          "Sigon's Gage",
+          "set"
+        ],
+        [
+          "Tal Rasha's Horadric Crest",
+          "set"
+        ],
+        [
+          "Wilhelm's Pride",
+          "set"
+        ],
+        [
+          "Sander's Superstition",
+          "set"
+        ],
+        [
+          "Bul-Katho's Tribal Guardian",
+          "set"
+        ],
+        [
+          "Immortal King's Detail",
+          "set"
+        ],
+        [
+          "Naj's Circlet",
+          "set"
+        ],
+        [
+          "Angelic Halo",
+          "set"
+        ],
+        [
+          "Angelic Halo",
+          "set"
+        ],
+        [
+          "Sazabi's Cobalt Redeemer",
+          "set"
+        ],
+        [
+          "Cathan's Sigil",
+          "set"
+        ],
+        [
+          "Naj's Light Plate",
+          "set"
+        ]
+      ],
+      "runes": [],
+      "rings": [
+        "Cathan's Seal",
+        "Angelic Halo",
+        "Angelic Halo"
+      ],
+      "belts": [],
+      "amulets": [
+        "Cathan's Sigil"
+      ],
+      "charms_small": [],
+      "charms_large": [],
+      "charms_grand": [],
+      "weapons": [
+        "Short Sword"
+      ],
+      "armors": [
+        "Wilhelm's Pride",
+        "Naj's Light Plate"
+      ],
+      "other": [
+        "Lesser Healing Potion",
+        "Lesser Healing Potion",
+        "Lesser Healing Potion",
+        "Lesser Healing Potion",
+        "Town Portal Scroll",
+        "Identify Scroll",
+        "Sigon's Shelter",
+        "Sigon's Guard",
+        "Sigon's Wrap",
+        "Sigon's Sabot",
+        "Sigon's Gage",
+        "Tal Rasha's Horadric Crest",
+        "Sander's Superstition",
+        "Bul-Katho's Tribal Guardian",
+        "Immortal King's Detail",
+        "Naj's Circlet",
+        "Sazabi's Cobalt Redeemer",
+        "Buckler"
+      ]
+    },
+    {
+      "account": "zgan2",
+      "charfile": "setitemsone",
+      "charname": "setitemsone",
+      "unique_set": [],
+      "runes": [],
+      "rings": [],
+      "belts": [],
+      "amulets": [],
+      "charms_small": [],
+      "charms_large": [],
+      "charms_grand": [],
+      "weapons": [
+        "Hand Axe"
+      ],
+      "armors": [],
+      "other": [
+        "Lesser Healing Potion",
+        "Lesser Healing Potion",
+        "Lesser Healing Potion",
+        "Lesser Healing Potion",
+        "Town Portal Scroll",
+        "Identify Scroll",
+        "Buckler"
+      ]
+    },
+    {
+      "account": "zgan3",
+      "charfile": "setstwo",
+      "charname": "setstwo",
+      "unique_set": [],
+      "runes": [],
+      "rings": [],
+      "belts": [],
+      "amulets": [],
+      "charms_small": [],
+      "charms_large": [],
+      "charms_grand": [],
+      "weapons": [
+        "Short Sword"
+      ],
+      "armors": [],
+      "other": [
+        "Lesser Healing Potion",
+        "Lesser Healing Potion",
+        "Lesser Healing Potion",
+        "Lesser Healing Potion",
+        "Town Portal Scroll",
+        "Identify Scroll",
+        "Buckler"
+      ]
+    },
+    {
+      "account": "zliazubb",
+      "charfile": "slabiruni",
+      "charname": "slabiruni",
+      "unique_set": [],
+      "runes": [],
+      "rings": [],
+      "belts": [],
+      "amulets": [],
+      "charms_small": [],
+      "charms_large": [],
+      "charms_grand": [],
+      "weapons": [],
+      "armors": [],
+      "other": [
+        "Lesser Healing Potion",
+        "Lesser Healing Potion",
+        "Lesser Healing Potion",
+        "Lesser Healing Potion",
+        "Lum Rune",
+        "Lum Rune",
+        "Lum Rune",
+        "Ko Rune",
+        "Io Rune",
+        "Hel Rune",
+        "Dol Rune",
+        "Ko Rune",
+        "Dol Rune",
+        "Dol Rune",
+        "Lum Rune",
+        "Hel Rune",
+        "Dol Rune",
+        "Io Rune",
+        "Lum Rune",
+        "Ko Rune",
+        "Hel Rune",
+        "Dol Rune",
+        "Ko Rune",
+        "Dol Rune",
+        "Dol Rune",
+        "Hel Rune",
+        "Thul Rune",
+        "Tal Rune",
+        "Ral Rune",
+        "Ral Rune",
+        "Ort Rune",
+        "Tir Rune",
+        "Tir Rune",
+        "Ral Rune",
+        "Io Rune",
+        "Lum Rune",
+        "Thul Rune",
+        "Lum Rune",
+        "Ral Rune",
+        "Tal Rune",
+        "Tir Rune",
+        "Hel Rune",
+        "Ort Rune",
+        "Nef Rune",
+        "Tir Rune",
+        "Ral Rune",
+        "Ith Rune",
+        "Dol Rune",
+        "Dol Rune",
+        "Io Rune",
+        "Dol Rune",
+        "Shael Rune",
+        "Sol Rune",
+        "Shael Rune",
+        "Ral Rune",
+        "Shael Rune",
+        "Amn Rune",
+        "Amn Rune",
+        "Amn Rune",
+        "Thul Rune",
+        "Ral Rune",
+        "Eth Rune",
+        "Amn Rune",
+        "Io Rune",
+        "Shael Rune",
+        "Sol Rune",
+        "Tal Rune",
+        "Eth Rune",
+        "Amn Rune",
+        "Tal Rune",
+        "Ort Rune",
+        "Sol Rune",
+        "Ral Rune",
+        "Shael Rune",
+        "Ort Rune",
+        "Tal Rune",
+        "Akaran Targe",
+        "Eth Rune",
+        "Tir Rune",
+        "Katar",
+        "Buckler"
+      ]
+    },
+    {
+      "account": "zliazub",
+      "charfile": "slabirunii",
+      "charname": "slabirunii",
+      "unique_set": [],
+      "runes": [],
+      "rings": [],
+      "belts": [],
+      "amulets": [],
+      "charms_small": [],
+      "charms_large": [],
+      "charms_grand": [],
+      "weapons": [
+        "Cryptic Axe"
+      ],
+      "armors": [],
+      "other": [
+        "Lesser Healing Potion",
+        "Lesser Healing Potion",
+        "Lesser Healing Potion",
+        "Lesser Healing Potion",
+        "Shael Rune",
+        "Ral Rune",
+        "Sol Rune",
+        "Io Rune",
+        "Ko Rune",
+        "Lum Rune",
+        "Ko Rune",
+        "Dol Rune",
+        "Dol Rune",
+        "Lum Rune",
+        "Lum Rune",
+        "Io Rune",
+        "Dol Rune",
+        "Io Rune",
+        "Shael Rune",
+        "Hel Rune",
+        "Io Rune",
+        "Wire Fleece",
+        "Lum Rune",
+        "Lum Rune",
+        "Lum Rune",
+        "Lum Rune",
+        "Amn Rune",
+        "Hel Rune",
+        "Sol Rune",
+        "Sol Rune",
+        "Ith Rune",
+        "Amn Rune",
+        "Sol Rune",
+        "Ko Rune",
+        "Lum Rune",
+        "Io Rune",
+        "Amn Rune",
+        "Ith Rune",
+        "Javelin",
+        "Buckler"
+      ]
+    },
+    {
+      "account": "zliazubbb",
+      "charfile": "socket",
+      "charname": "socket",
+      "unique_set": [],
+      "runes": [],
+      "rings": [],
+      "belts": [],
+      "amulets": [],
+      "charms_small": [],
+      "charms_large": [],
+      "charms_grand": [],
+      "weapons": [
+        "Colossal Sword",
+        "Crystal Sword",
+        "Colossal Sword",
+        "Hand Axe"
+      ],
+      "armors": [],
+      "other": [
+        "Lesser Healing Potion",
+        "Lesser Healing Potion",
+        "Lesser Healing Potion",
+        "Lesser Healing Potion",
+        "Phase Blade",
+        "Wire Fleece",
+        "Knout",
+        "Wyrmhide",
+        "Thresher",
+        "Wire Fleece",
+        "Thresher",
+        "Scourge",
+        "Buckler"
+      ]
+    },
+    {
+      "account": "zliazub",
+      "charfile": "sockets",
+      "charname": "sockets",
+      "unique_set": [
+        [
+          "Hwanin's Refuge",
+          "set"
+        ],
+        [
+          "Blade Of Ali Baba",
+          "unique"
+        ],
+        [
+          "Hellslayer",
+          "unique"
+        ],
+        [
+          "Harlequin Crest",
+          "unique"
+        ],
+        [
+          "Aldur's Advance",
+          "set"
+        ],
+        [
+          "Dark Adherent",
+          "set"
+        ]
+      ],
+      "runes": [],
+      "rings": [],
+      "belts": [],
+      "amulets": [],
+      "charms_small": [],
+      "charms_large": [],
+      "charms_grand": [],
+      "weapons": [
+        "Rune Sword",
+        "Cryptic Axe",
+        "Short Sword"
+      ],
+      "armors": [
+        "Harlequin Crest"
+      ],
+      "other": [
+        "Lesser Healing Potion",
+        "Lesser Healing Potion",
+        "Lesser Healing Potion",
+        "Lesser Healing Potion",
+        "Great Hauberk",
+        "Scarab Husk",
+        "Thresher",
+        "Hwanin's Refuge",
+        "Blade Of Ali Baba",
+        "Hellslayer",
+        "Dusk Shroud",
+        "Dusk Shroud",
+        "Aldur's Advance",
+        "Dark Adherent",
+        "Buckler"
+      ]
+    },
+    {
+      "account": "zgan",
+      "charfile": "sorsi",
+      "charname": "sorsi",
+      "unique_set": [
+        [
+          "Annihilus",
+          "unique"
+        ],
+        [
+          "Arioc's Needle",
+          "unique"
+        ],
+        [
+          "Milabrega's Orb",
+          "set"
+        ],
+        [
+          "Harlequin Crest",
+          "unique"
+        ],
+        [
+          "Tal Rasha's Adjudication",
+          "set"
+        ],
+        [
+          "Tal Rasha's Guardianship",
+          "set"
+        ],
+        [
+          "Dwarf Star",
+          "unique"
+        ],
+        [
+          "Tal Rasha's Fine-Spun Cloth",
+          "set"
+        ],
+        [
+          "Immortal King's Pillar",
+          "set"
+        ],
+        [
+          "Immortal King's Forge",
+          "set"
+        ],
+        [
+          "Gheed's Fortune",
+          "unique"
+        ],
+        [
+          "The Mahim-Oak Curio",
+          "unique"
+        ],
+        [
+          "Eschuta's Temper",
+          "unique"
+        ],
+        [
+          "Tiamat's Rebuke",
+          "unique"
+        ],
+        [
+          "The Oculus",
+          "unique"
+        ]
+      ],
+      "runes": [],
+      "rings": [
+        "Twisted Essence of Suffering",
+        "Twisted Essence of Suffering",
+        "Festering Essence of Destruction",
+        "Scintillating Remedy",
+        "Dwarf Star"
+      ],
+      "belts": [],
+      "amulets": [
+        "Tal Rasha's Adjudication",
+        "The Mahim-Oak Curio"
+      ],
+      "charms_small": [
+        "Annihilus",
+        "Good Luck"
+      ],
+      "charms_large": [
+        "Shimmering Strength",
+        "Azure Balance",
+        "Cobalt",
+        "Stout Dexterity"
+      ],
+      "charms_grand": [
+        "Gheed's Fortune",
+        "Chilling Quality"
+      ],
+      "weapons": [],
+      "armors": [
+        "Harlequin Crest"
+      ],
+      "other": [
+        "Charged Essence of Hatred",
+        "Horadric Cube",
+        "Burning Essence of Terror",
+        "Arioc's Needle",
+        "Identify Book",
+        "Milabrega's Orb",
+        "Tal Rasha's Guardianship",
+        "Tal Rasha's Fine-Spun Cloth",
+        "Immortal King's Pillar",
+        "Immortal King's Forge",
+        "Token of Absolution",
+        "Town Portal Book",
+        "Bone Visage",
+        "Key of Hate",
+        "Skeleton Key",
+        "Strong Mana Potion",
+        "Strong Healing Potion",
+        "Strong Healing Potion",
+        "Greater Mana Potion",
+        "Greater Mana Potion",
+        "Strong Mana Potion",
+        "Greater Healing Potion",
+        "Greater Healing Potion",
+        "Greater Healing Potion",
+        "Greater Mana Potion",
+        "Eschuta's Temper",
+        "Tiamat's Rebuke",
+        "Greater Healing Potion",
+        "Strong Healing Potion",
+        "Greater Healing Potion",
+        "Strong Mana Potion",
+        "Strong Mana Potion",
+        "Strong Mana Potion",
+        "The Oculus",
+        "Spirit"
+      ]
+    },
+    {
+      "account": "zliazubbbb",
+      "charfile": "tesla",
+      "charname": "tesla",
+      "unique_set": [
+        [
+          "Sigon's Gage",
+          "set"
+        ],
+        [
+          "Sigon's Sabot",
+          "set"
+        ],
+        [
+          "Sigon's Shelter",
+          "set"
+        ],
+        [
+          "Sigon's Visor",
+          "set"
+        ],
+        [
+          "Sigon's Wrap",
+          "set"
+        ],
+        [
+          "Sigon's Guard",
+          "set"
+        ]
+      ],
+      "runes": [],
+      "rings": [
+        "Gold",
+        "Havoc Circle"
+      ],
+      "belts": [],
+      "amulets": [
+        "Amelioration"
+      ],
+      "charms_small": [
+        "Beryl Flame"
+      ],
+      "charms_large": [
+        "Dexterity",
+        "Strength"
+      ],
+      "charms_grand": [
+        "Iron",
+        "Bronze"
+      ],
+      "weapons": [],
+      "armors": [],
+      "other": [
+        "Town Portal Book",
+        "Horadric Cube",
+        "Tir Rune",
+        "Sigon's Gage",
+        "Sigon's Sabot",
+        "Sigon's Shelter",
+        "Sigon's Visor",
+        "Sigon's Wrap",
+        "Targe",
+        "Strong Mana Potion",
+        "Mana Potion",
+        "Light Mana Potion",
+        "Tal Rune",
+        "Eth Rune",
+        "Nef Rune",
+        "Identify Book",
+        "Mana Potion",
+        "Spirit",
+        "Light Healing Potion",
+        "Healing Potion",
+        "Healing Potion",
+        "Healing Potion",
+        "Steel",
+        "Sigon's Guard"
+      ]
+    },
+    {
+      "account": "zliazubb",
+      "charfile": "uiyuiuyi",
+      "charname": "uiyuiuyi",
+      "unique_set": [
+        [
+          "Bonehew",
+          "unique"
+        ],
+        [
+          "Buriza-Do Kyanon",
+          "unique"
+        ],
+        [
+          "Jalal's Mane",
+          "unique"
+        ],
+        [
+          "Angelic Sickle",
+          "set"
+        ],
+        [
+          "Moser's Blessed Circle",
+          "unique"
+        ],
+        [
+          "Natalya's Soul",
+          "set"
+        ],
+        [
+          "Rite of Passage",
+          "set"
+        ],
+        [
+          "Chance Guards",
+          "unique"
+        ],
+        [
+          "Kira's Guardian",
+          "unique"
+        ],
+        [
+          "Titan's Revenge",
+          "unique"
+        ],
+        [
+          "Kira's Guardian",
+          "unique"
+        ],
+        [
+          "Jade Talon",
+          "unique"
+        ],
+        [
+          "Hwanin's Splendor",
+          "set"
+        ],
+        [
+          "Frostburn",
+          "unique"
+        ],
+        [
+          "Aldur's Deception",
+          "set"
+        ],
+        [
+          "Wilhelm's Pride",
+          "set"
+        ]
+      ],
+      "runes": [],
+      "rings": [],
+      "belts": [],
+      "amulets": [],
+      "charms_small": [],
+      "charms_large": [],
+      "charms_grand": [],
+      "weapons": [
+        "Cryptic Axe",
+        "Hand Axe"
+      ],
+      "armors": [
+        "Wilhelm's Pride"
+      ],
+      "other": [
+        "Lesser Healing Potion",
+        "Lesser Healing Potion",
+        "Lesser Healing Potion",
+        "Lesser Healing Potion",
+        "Town Portal Scroll",
+        "Bonehew",
+        "Buriza-Do Kyanon",
+        "Jalal's Mane",
+        "Angelic Sickle",
+        "Storm Nails",
+        "Moser's Blessed Circle",
+        "Identify Scroll",
+        "Natalya's Soul",
+        "Rite of Passage",
+        "Chance Guards",
+        "Kira's Guardian",
+        "Titan's Revenge",
+        "Kira's Guardian",
+        "Jade Talon",
+        "Hwanin's Splendor",
+        "Frostburn",
+        "Blood Gyre",
+        "Aldur's Deception",
+        "Buckler"
+      ]
+    },
+    {
+      "account": "zliazubbb",
+      "charfile": "undertaker",
+      "charname": "undertaker",
+      "unique_set": [
+        [
+          "Undead Crown",
+          "unique"
+        ],
+        [
+          "Infernal Torch",
+          "set"
+        ],
+        [
+          "Horadric Staff",
+          "unique"
+        ],
+        [
+          "Ume's Lament",
+          "unique"
+        ]
+      ],
+      "runes": [],
+      "rings": [
+        "Jade",
+        "Crimson"
+      ],
+      "belts": [
+        "Sharkskin Belt"
+      ],
+      "amulets": [
+        "Fortuitous Health",
+        "Beryl"
+      ],
+      "charms_small": [
+        "Frost",
+        "Frost",
+        "Lapis Greed",
+        "Cobalt",
+        "Strength"
+      ],
+      "charms_large": [],
+      "charms_grand": [
+        "Greed"
+      ],
+      "weapons": [
+        "Horadric Staff"
+      ],
+      "armors": [
+        "Undead Crown",
+        "Leather Boots"
+      ],
+      "other": [
+        "Horadric Cube",
+        "Skeleton Key",
+        "Town Portal Book",
+        "Identify Book",
+        "Exploding Potion",
+        "Mephisto Soul Stone",
+        "Light Mana Potion",
+        "Infernal Torch",
+        "Strong Mana Potion",
+        "Ral Rune",
+        "Lore",
+        "Stealth",
+        "Russet",
+        "Strong Mana Potion",
+        "Strong Mana Potion",
+        "Greater Mana Potion",
+        "Strong Healing Potion",
+        "Greater Mana Potion",
+        "Bone Wand",
+        "Strong Mana Potion",
+        "Flawless Diamond",
+        "Excellence",
+        "Ume's Lament",
+        "Brimstone Wing"
+      ]
+    },
+    {
+      "account": "zgan3",
+      "charfile": "uniqueone",
+      "charname": "uniqueone",
+      "unique_set": [
+        [
+          "The Gladiator's Bane",
+          "unique"
+        ],
+        [
+          "Snowclash",
+          "unique"
+        ],
+        [
+          "Verdungo's Hearty Cord",
+          "unique"
+        ],
+        [
+          "Magewrath",
+          "unique"
+        ],
+        [
+          "Sandstorm Trek",
+          "unique"
+        ],
+        [
+          "Boneshade",
+          "unique"
+        ],
+        [
+          "Silks of the Victor",
+          "unique"
+        ],
+        [
+          "Djinn Slayer",
+          "unique"
+        ],
+        [
+          "Djinn Slayer",
+          "unique"
+        ],
+        [
+          "Bloodmoon",
+          "unique"
+        ],
+        [
+          "Hexfire",
+          "unique"
+        ],
+        [
+          "Hexfire",
+          "unique"
+        ]
+      ],
+      "runes": [],
+      "rings": [],
+      "belts": [],
+      "amulets": [],
+      "charms_small": [],
+      "charms_large": [],
+      "charms_grand": [],
+      "weapons": [
+        "Hand Axe"
+      ],
+      "armors": [],
+      "other": [
+        "Lesser Healing Potion",
+        "Lesser Healing Potion",
+        "Lesser Healing Potion",
+        "Lesser Healing Potion",
+        "Town Portal Scroll",
+        "Identify Scroll",
+        "The Gladiator's Bane",
+        "Snowclash",
+        "Verdungo's Hearty Cord",
+        "Magewrath",
+        "Sandstorm Trek",
+        "Boneshade",
+        "Silks of the Victor",
+        "Djinn Slayer",
+        "Djinn Slayer",
+        "Honor",
+        "Bloodmoon",
+        "Hexfire",
+        "Hexfire",
+        "Buckler"
+      ]
+    },
+    {
+      "account": "zgan3",
+      "charfile": "uniquetwo",
+      "charname": "uniquetwo",
+      "unique_set": [],
+      "runes": [],
+      "rings": [],
+      "belts": [],
+      "amulets": [],
+      "charms_small": [],
+      "charms_large": [],
+      "charms_grand": [],
+      "weapons": [
+        "Hand Axe"
+      ],
+      "armors": [],
+      "other": [
+        "Lesser Healing Potion",
+        "Lesser Healing Potion",
+        "Lesser Healing Potion",
+        "Lesser Healing Potion",
+        "Town Portal Scroll",
+        "Identify Scroll",
+        "Buckler"
+      ]
+    },
+    {
+      "account": "webstat",
+      "charfile": "webvarin",
+      "charname": "webvarin",
+      "unique_set": [],
+      "runes": [],
+      "rings": [],
+      "belts": [],
+      "amulets": [],
+      "charms_small": [],
+      "charms_large": [],
+      "charms_grand": [],
+      "weapons": [
+        "Hand Axe"
+      ],
+      "armors": [],
+      "other": [
+        "Lesser Healing Potion",
+        "Lesser Healing Potion",
+        "Lesser Healing Potion",
+        "Lesser Healing Potion",
+        "Town Portal Scroll",
+        "Identify Scroll",
+        "Buckler"
+      ]
+    },
+    {
+      "account": "zliazubb",
+      "charfile": "yrtyrtyrty",
+      "charname": "yrtyrtyrty",
+      "unique_set": [
+        [
+          "Dark Adherent",
+          "set"
+        ],
+        [
+          "Hellmouth",
+          "unique"
+        ],
+        [
+          "Wihtstan's Guard",
+          "set"
+        ],
+        [
+          "Gimmershred",
+          "unique"
+        ],
+        [
+          "Laying of Hands",
+          "set"
+        ],
+        [
+          "Haemosu's Adament",
+          "set"
+        ],
+        [
+          "Ume's Lament",
+          "unique"
+        ],
+        [
+          "Ormus' Robes",
+          "unique"
+        ],
+        [
+          "Skin of the Vipermagi",
+          "unique"
+        ],
+        [
+          "Rite of Passage",
+          "set"
+        ],
+        [
+          "Shadow Killer",
+          "unique"
+        ],
+        [
+          "Dangoon's Teaching",
+          "set"
+        ],
+        [
+          "Magefist",
+          "unique"
+        ],
+        [
+          "Wizardspike",
+          "unique"
+        ],
+        [
+          "Carin Shard",
+          "unique"
+        ],
+        [
+          "Lidless Wall",
+          "unique"
+        ],
+        [
+          "Wizardspike",
+          "unique"
+        ],
+        [
+          "Moser's Blessed Circle",
+          "unique"
+        ]
+      ],
+      "runes": [],
+      "rings": [],
+      "belts": [],
+      "amulets": [],
+      "charms_small": [],
+      "charms_large": [],
+      "charms_grand": [],
+      "weapons": [
+        "Hand Axe"
+      ],
+      "armors": [
+        "Ormus' Robes"
+      ],
+      "other": [
+        "Lesser Healing Potion",
+        "Lesser Healing Potion",
+        "Lesser Healing Potion",
+        "Lesser Healing Potion",
+        "Dark Adherent",
+        "Hellmouth",
+        "Wihtstan's Guard",
+        "Gimmershred",
+        "Laying of Hands",
+        "Haemosu's Adament",
+        "Ume's Lament",
+        "Skin of the Vipermagi",
+        "Rite of Passage",
+        "Shadow Killer",
+        "Dangoon's Teaching",
+        "Magefist",
+        "Wizardspike",
+        "Carin Shard",
+        "Lidless Wall",
+        "Wizardspike",
+        "Moser's Blessed Circle",
+        "Buckler"
+      ]
+    },
+    {
+      "account": "zgan2",
+      "charfile": "zgansasin",
+      "charname": "zgansasin",
+      "unique_set": [],
+      "runes": [],
+      "rings": [
+        "Bronze Craftsmanship",
+        "Bronze",
+        "Chaos Band",
+        "Shimmering"
+      ],
+      "belts": [
+        "Light Belt"
+      ],
+      "amulets": [
+        "Luck",
+        "Shaman's Regrowth",
+        "Magekiller's",
+        "Beryl Craftsmanship"
+      ],
+      "charms_small": [],
+      "charms_large": [],
+      "charms_grand": [
+        "Entrapping"
+      ],
+      "weapons": [],
+      "armors": [],
+      "other": [
+        "Town Portal Book",
+        "Identify Book",
+        "Lesser Healing Potion",
+        "Lesser Healing Potion",
+        "Lesser Healing Potion",
+        "Chromatic",
+        "Corpse Brow",
+        "Glyph Shell",
+        "Rugged Remedy",
+        "Bronze Remedy",
+        "Lesser Healing Potion",
+        "Lesser Healing Potion",
+        "Lesser Healing Potion",
+        "Strong Healing Potion",
+        "Strong Healing Potion",
+        "Horadric Cube",
+        "Ancient's Pledge"
+      ]
+    },
+    {
+      "account": "zgan",
+      "charfile": "zganvarin",
+      "charname": "zganvarin",
+      "unique_set": [
+        [
+          "The Impaler",
+          "unique"
+        ],
+        [
+          "Wolfhowl",
+          "unique"
+        ],
+        [
+          "The Gladiator's Bane",
+          "unique"
+        ],
+        [
+          "Gheed's Fortune",
+          "unique"
+        ],
+        [
+          "Nord's Tenderizer",
+          "unique"
+        ],
+        [
+          "Immortal King's Forge",
+          "set"
+        ],
+        [
+          "Steelclash",
+          "unique"
+        ],
+        [
+          "Duriel's Shell",
+          "unique"
+        ],
+        [
+          "Nagelring",
+          "unique"
+        ],
+        [
+          "Arreat's Face",
+          "unique"
+        ],
+        [
+          "Telling of Beads",
+          "set"
+        ],
+        [
+          "Corpsemourn",
+          "unique"
+        ],
+        [
+          "Raven Frost",
+          "unique"
+        ],
+        [
+          "Raven Frost",
+          "unique"
+        ],
+        [
+          "Immortal King's Detail",
+          "set"
+        ],
+        [
+          "Immortal King's Pillar",
+          "set"
+        ],
+        [
+          "Dracul's Grasp",
+          "unique"
+        ],
+        [
+          "Immortal King's Stone Crusher",
+          "set"
+        ]
+      ],
+      "runes": [],
+      "rings": [
+        "Nagelring",
+        "Raven Frost",
+        "Raven Frost"
+      ],
+      "belts": [],
+      "amulets": [
+        "Slayer's Teleportation",
+        "Telling of Beads"
+      ],
+      "charms_small": [
+        "Fine",
+        "Fine Fortune"
+      ],
+      "charms_large": [
+        "Shimmering",
+        "Iron"
+      ],
+      "charms_grand": [
+        "Sharp",
+        "Steel",
+        "Gheed's Fortune",
+        "Steel Fire"
+      ],
+      "weapons": [],
+      "armors": [],
+      "other": [
+        "Identify Book",
+        "Horadric Cube",
+        "Town Portal Book",
+        "The Impaler",
+        "Wolfhowl",
+        "The Gladiator's Bane",
+        "Nord's Tenderizer",
+        "Tal Rune",
+        "Hel Rune",
+        "Immortal King's Forge",
+        "Steelclash",
+        "Duriel's Shell",
+        "Tal Rune",
+        "Antidote Potion",
+        "Tir Rune",
+        "Antidote Potion",
+        "Thul Rune",
+        "Antidote Potion",
+        "Arreat's Face",
+        "Corpsemourn",
+        "Immortal King's Detail",
+        "Immortal King's Pillar",
+        "Dracul's Grasp",
+        "Ort Rune",
+        "Greater Healing Potion",
+        "Greater Healing Potion",
+        "Greater Healing Potion",
+        "Greater Healing Potion",
+        "Greater Healing Potion",
+        "Greater Healing Potion",
+        "Greater Healing Potion",
+        "Greater Mana Potion",
+        "Immortal King's Stone Crusher",
+        "Greater Mana Potion",
+        "Gale Ward",
+        "Greater Healing Potion",
+        "Greater Mana Potion",
+        "Breath of the Dying",
+        "Oath"
+      ]
+    },
+    {
+      "account": "zgan4",
+      "charfile": "zganvazonka",
+      "charname": "zganvazonka",
+      "unique_set": [
+        [
+          "Gorefoot",
+          "unique"
+        ],
+        [
+          "Sigon's Wrap",
+          "set"
+        ],
+        [
+          "Horadric Staff",
+          "unique"
+        ]
+      ],
+      "runes": [],
+      "rings": [
+        "Bronze",
+        "Bronze Warmth"
+      ],
+      "belts": [],
+      "amulets": [
+        "Rugged Chance"
+      ],
+      "charms_small": [],
+      "charms_large": [
+        "Dexterity",
+        "Greed"
+      ],
+      "charms_grand": [
+        "Lizard's"
+      ],
+      "weapons": [
+        "Horadric Staff"
+      ],
+      "armors": [
+        "Hard Leather Armor",
+        "Sturdy Frost Shield",
+        "Small Shield"
+      ],
+      "other": [
+        "Town Portal Book",
+        "Identify Book",
+        "Brandistock",
+        "Skeleton Key",
+        "Horadric Cube",
+        "Mephisto Soul Stone",
+        "Greater Healing Potion",
+        "Strong Healing Potion",
+        "Strong Healing Potion",
+        "Strong Healing Potion",
+        "Strong Healing Potion",
+        "Readiness",
+        "Strong Healing Potion",
+        "Strong Mana Potion",
+        "Strong Mana Potion",
+        "Strong Mana Potion",
+        "Mechanist's",
+        "Javelin",
+        "Strong Mana Potion",
+        "Strong Mana Potion",
+        "Strong Healing Potion",
+        "Greater Healing Potion",
+        "Strong Mana Potion",
+        "Strong Healing Potion",
+        "Strong Mana Potion",
+        "Strong Mana Potion",
+        "Gorefoot",
+        "Sigon's Wrap",
+        "Greater Healing Potion",
+        "Strong Healing Potion",
+        "Strong Healing Potion",
+        "Ghoul Wood",
+        ""
+      ]
+    }
+  ]
+}

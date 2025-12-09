@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Active Games</title>
+<style>
+body {
+    font-family: 'Garamond', 'Times New Roman', serif;
+    background-color: #1c1c1c;
+    color: #f5d083;
+    margin: 18px;
+}
+h1 {
+    text-align: center;
+    color: #f5d083;
+    text-shadow: 2px 2px 4px #000;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background-color: #2b2b2b;
+    border: 2px solid #f5d083;
+}
+th, td {
+    padding: 8px;
+    border-bottom: 1px solid rgba(245,208,131,0.2);
+    text-align: left;
+    color: #f5d083;
+}
+th {
+    background-color: #3a2f2f;
+    text-shadow: 1px 1px 2px #000;
+}
+tr:nth-child(even) {
+    background-color: #2e2b2b;
+}
+tr:hover {
+    background-color: #5a3e1b;
+    color: #fff;
+    font-weight: bold;
+}
+.diff-normal {
+    color: #0f0;
+    font-weight: bold;
+}
+.diff-nightmare {
+    color: #ff8c00;
+    font-weight: bold;
+}
+.diff-hell {
+    color: #f00;
+    font-weight: bold;
+}
+</style>
+</head>
+<body>
+
+<h1>Active Games</h1>
+
+<table id="gamesTable">
+<thead>
+<tr>
+<th>Name</th>
+<th>Owner</th>
+<th>Address</th>
+<th>Created</th>
+<th>Status</th>
+<th>Type</th>
+<th>Difficulty</th>
+<th>Players</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+
+<script>
+async function loadGames() {
+    try {
+        const response = await fetch("/webportal/data/gameinfo.json");
+        const games = await response.json();
+        const tbody = document.querySelector("#gamesTable tbody");
+        tbody.innerHTML = "";
+
+        games.forEach(g => {
+            if (!g.status || g.status !== "open") return;
+
+            let diffClass = "diff-normal";
+            if (g.difficulty === "nightmare") diffClass = "diff-nightmare";
+            if (g.difficulty === "hell") diffClass = "diff-hell";
+
+            let players = (g.players && g.players.length) ? g.players.length : 0;
+
+            const row = `
+                <tr>
+                    <td>${g.game_name}</td>
+                    <td>${g.owner}</td>
+                    <td>${g.address}</td>
+                    <td>${g.created}</td>
+                    <td>${g.status}</td>
+                    <td>${g.type}</td>
+                    <td class="${diffClass}">${g.difficulty}</td>
+                    <td>${players}</td>
+                </tr>
+            `;
+            tbody.innerHTML += row;
+        });
+    } catch (e) {
+        console.error("Error loading gameinfo:", e);
+    }
+}
+loadGames();
+</script>
+
+</body>
+</html>

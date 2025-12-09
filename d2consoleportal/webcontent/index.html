@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Diablo 2 Realm Statistics</title>
+<link rel="stylesheet" href="css/d2console.css">
+<style>
+/* Допълнителни стилове за index */
+.summary {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.card {
+  background:#121416;
+  padding:16px 24px;
+  border-radius:8px;
+  box-shadow:0 0 10px rgba(0,0,0,0.4);
+  text-align:center;
+  min-width:180px;
+  color:#fff;
+}
+.card h2 {
+  margin:0;
+  font-size:1rem;
+  color:#79d1ff;
+}
+.card p {
+  margin:4px 0 0 0;
+  font-size:1.1rem;
+  font-weight:bold;
+  color:#fff;
+}
+.game-card {
+  border: 2px solid #444;
+  border-radius:8px;
+  padding:10px;
+  margin-bottom:15px;
+}
+.game-card.normal { border-color: green; }
+.game-card.nightmare { border-color: orange; }
+.game-card.hell { border-color: red; }
+.game-title {
+  font-weight:bold;
+  font-size:1.1rem;
+}
+.players-table {
+  width:100%;
+  border-collapse: collapse;
+  margin-top:5px;
+}
+.players-table th, .players-table td {
+  border:1px solid #555;
+  padding:4px 6px;
+  text-align:left;
+}
+.players-table th {
+  background:#222;
+}
+.players-table tr:nth-child(even) { background:#1a1a1a; }
+</style>
+</head>
+<body>
+
+<h1>Diablo 2 Realm Statistics</h1>
+<p class="sub">Last updated: <span id="last-updated"></span></p>
+
+<div class="links">
+    <a href="http://192.168.88.41/charitems.html" target="_blank">Items Stat</a>
+    <a href="http://192.168.88.41/ladder.html" target="_blank">Heros Ladder Stat</a>
+    <a href="http://192.168.88.41/webladder.html" target="_blank">Game Ladder Stat</a>
+
+</div>
+
+<div class="summary">
+  <div class="card"><h2>Server Uptime</h2><p id="server-uptime"></p></div>
+  <div class="card"><h2>PvPGN Uptime</h2><p id="pvpgn-uptime"></p></div>
+  <div class="card"><h2>D2GS Uptime</h2><p id="d2gs-uptime"></p></div>
+</div>
+
+<div id="games-container"></div>
+
+<script src="js/index.js"></script>
+</body>
+</html>
