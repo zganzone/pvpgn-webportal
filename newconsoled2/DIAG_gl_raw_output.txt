@@ -1,0 +1,8 @@
++-No.--GameName---------GamePass---------ID----GameVer--Type--Difficulty--Ladder-----Users-CreateTime-Dis-+
+| 001  Igrazaveshti                      36    exp      sc    normal      ladder     1     00:37:07   N   |
+| 002  Joy                               25    exp      sc    hell        ladder     2     18:33:06   N   |
++---------------------------------------------------------------------------------------------------------+
+
+Total: 2 games running, 3 users in game.
+
+D2GS
